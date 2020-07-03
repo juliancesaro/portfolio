@@ -27,3 +27,9 @@ body {
   flex-direction: column;
   height: 100%;
 }
+section {
+  padding: 4rem;
+}
+section h1 {
+  text-align: center;
+}
