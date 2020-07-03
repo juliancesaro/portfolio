@@ -18,7 +18,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background: #1a1d21;
+  background: #252934;
   color: white;
   font-family: "Raleway";
 }
@@ -26,9 +26,4 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-.particles {
-  position: absolute;
-  height: 100%;
-  width: 100%;
 }

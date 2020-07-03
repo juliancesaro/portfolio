@@ -8,13 +8,14 @@
     width: 80px;
   }
 }
-.about-me {
-  text-align: center;
-  align-items: center;
+.home {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  text-align: center;
+  align-items: center;
+  height: calc(100vh + 53px);
   pointer-events: none;
 }
 .name {
@@ -37,6 +38,13 @@
   display: inline-block;
   transform-origin: 70% 70%;
   animation-fill-mode: forwards;
+}
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
 }
 @keyframes wave {
   0% {
