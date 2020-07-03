@@ -1,26 +1,74 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import "./App.css"
+import Particles from "react-particles-js"
+import AboutMe from "./components/aboutMe/AboutMe"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Particles
+        className="particles"
+        params={{
+          particles: {
+            number: { value: 20 },
+            color: { value: ["#cc892b", "#1cd6b1", "#8c4ec7", "#8bc74e"] },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: {
+                enable: true,
+                speed: 0.2,
+                opacity_min: 0.3,
+                sync: false,
+              },
+            },
+            size: {
+              value: 5,
+              random: true,
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.1,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: "none",
+              random: true,
+              straight: false,
+              bounce: true,
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            // activate
+            events: {
+              onhover: {
+                enable: true,
+                mode: ["bubble"],
+              },
+
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 200,
+                size: 12,
+                duration: 1,
+                opacity: 0.8,
+                speed: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        }}
+      />
+      <AboutMe />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

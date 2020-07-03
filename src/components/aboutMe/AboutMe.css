@@ -1,0 +1,69 @@
+@media screen and (min-width: 600px) {
+  .julian {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .julian {
+    width: 80px;
+  }
+}
+.about-me {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  pointer-events: none;
+}
+.name {
+  color: orange;
+}
+.scroll-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50px;
+  pointer-events: fill;
+}
+.scroll-down:hover > .down-icon {
+  background-color: aqua;
+  transition: transform 0.3s ease;
+  transform: skew(90deg);
+  transform: skewX(90deg);
+  transform: skewY(-50deg);
+  transform: skew(90deg, -50deg);
+}
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
