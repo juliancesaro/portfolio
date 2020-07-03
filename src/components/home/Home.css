@@ -27,7 +27,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  bottom: 50px;
+  bottom: 100px;
   pointer-events: fill;
   cursor: pointer;
 }
@@ -43,8 +43,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100vw;
+  height: calc(100vh);
+  width: 100%;
 }
 @keyframes wave {
   0% {

@@ -85,8 +85,8 @@ const AboutMe = () => {
             </span>
           </div>
         </Fade>
+        <Navbar />
       </div>
-      <Navbar />
     </div>
   )
 }
