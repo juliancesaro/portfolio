@@ -7,14 +7,6 @@ const port = process.env.PORT || 3000
 
 const server = http.createServer(app)
 
-app.get("/projects", function (req, res) {
-  res.redirect("/")
-})
-
-app.get("/contact", function (req, res) {
-  res.redirect("/")
-})
-
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: "This page does not exist!" })
 }

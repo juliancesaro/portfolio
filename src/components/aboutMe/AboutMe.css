@@ -28,14 +28,7 @@
   margin-right: auto;
   bottom: 50px;
   pointer-events: fill;
-}
-.scroll-down:hover > .down-icon {
-  background-color: aqua;
-  transition: transform 0.3s ease;
-  transform: skew(90deg);
-  transform: skewX(90deg);
-  transform: skewY(-50deg);
-  transform: skew(90deg, -50deg);
+  cursor: pointer;
 }
 .wave-emoji {
   animation-duration: 1.8s;
@@ -43,6 +36,7 @@
   animation-name: wave;
   display: inline-block;
   transform-origin: 70% 70%;
+  animation-fill-mode: forwards;
 }
 @keyframes wave {
   0% {
