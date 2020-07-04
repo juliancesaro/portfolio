@@ -10,7 +10,7 @@ import julian from "../../images/julian.png"
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="home-wrapper">
       <div className="home">
         <Particles
           className="particles"
@@ -56,7 +56,6 @@ const AboutMe = () => {
                   enable: true,
                   mode: ["bubble"],
                 },
-
                 resize: true,
               },
               modes: {
@@ -72,29 +71,33 @@ const AboutMe = () => {
             retina_detect: true,
           }}
         />
-        <Fade bottom duration={1000} distance="40px">
-          <img className="julian" alt="julian" src={julian} />
-          <h1>
-            Hi, I'm <span className="name">Julian Cesaro</span>.{" "}
-            <span className="wave-emoji">{emoji("👋")}</span>
-          </h1>
-          <h1>I'm an aspiring full-stack web developer.</h1>
-          <div className="scroll-down">
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-63}
-              duration={500}
-            >
-              <h2>Read More!</h2>
-              <span className="down-icon">
-                <ArrowDropDownCircleIcon />
-              </span>
-            </Link>
-          </div>
-        </Fade>
+        <div className="greeting">
+          <Fade bottom duration={1000} distance="40px">
+            <img className="julian" alt="julian" src={julian} />
+            <h1 className="greeting-text">
+              Hi, I'm <span className="name">Julian Cesaro</span>.{" "}
+              <span className="wave-emoji">{emoji("👋")}</span>
+            </h1>
+            <h1 className="greeting-text">
+              I'm an aspiring full-stack web developer.
+            </h1>
+            <div className="scroll-down">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-63}
+                duration={500}
+              >
+                <ArrowDropDownCircleIcon
+                  fontSize="large"
+                  style={{ pointerEvents: "fill", cursor: "pointer" }}
+                />
+              </Link>
+            </div>
+          </Fade>
+        </div>
         <Navbar />
       </div>
     </div>

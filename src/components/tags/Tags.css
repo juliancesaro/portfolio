@@ -1,0 +1,6 @@
+.tags {
+  display: flex;
+  justify-content: left;
+  padding: 0;
+  list-style: none;
+}

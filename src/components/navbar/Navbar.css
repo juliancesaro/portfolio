@@ -8,7 +8,6 @@
   background-color: #1b242f;
   border-bottom: 3px solid #12adb3;
   pointer-events: fill;
-  z-index: 1;
 }
 .navbar a {
   cursor: pointer;

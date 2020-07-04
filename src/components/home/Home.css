@@ -16,7 +16,13 @@
   text-align: center;
   align-items: center;
   height: calc(100vh + 63px);
+  z-index: 1000;
+}
+.greeting {
   pointer-events: none;
+}
+.greeting-text {
+  margin: 5px;
 }
 .name {
   color: orange;
@@ -27,9 +33,10 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  bottom: 150px;
-  pointer-events: fill;
-  cursor: pointer;
+  bottom: 170px;
+}
+.scroll-down-element {
+  display: inline-block;
 }
 .wave-emoji {
   animation-duration: 1.8s;
