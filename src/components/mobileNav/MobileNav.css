@@ -1,0 +1,16 @@
+.mobilenav {
+  position: absolute;
+  top: 63px;
+  background-color: #333;
+  width: 100%;
+}
+.mobilenavlinks {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.mobilenavlinks a {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

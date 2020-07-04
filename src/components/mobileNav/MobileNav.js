@@ -1,13 +1,11 @@
-import React, { useState } from "react"
-import "./Navbar.css"
+import React from "react"
+import "./MobileNav.css"
 import { Link } from "react-scroll"
-import MenuIcon from "@material-ui/icons/Menu"
-import MobileNav from "../mobileNav/MobileNav"
 
-const Navbar = () => {
+const MobileNav = () => {
   return (
-    <div className="navbar">
-      <div className="navlinks">
+    <div className="mobilenav">
+      <div className="mobilenavlinks">
         <Link
           activeClass="active"
           to="home"
@@ -46,12 +44,8 @@ const Navbar = () => {
           CONTACT
         </Link>
       </div>
-      <div className="hamburger">
-        <MenuIcon fontSize="large" />
-      </div>
-      <MobileNav />
     </div>
   )
 }
 
-export default Navbar
+export default MobileNav

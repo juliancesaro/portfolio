@@ -85,7 +85,7 @@ const AboutMe = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={-53}
+              offset={-63}
               duration={500}
             >
               <h2>Read More!</h2>
