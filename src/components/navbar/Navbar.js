@@ -1,10 +1,14 @@
-import React from "react"
+import React, { useState } from "react"
 import "./Navbar.css"
 import { Link } from "react-scroll"
 import MenuIcon from "@material-ui/icons/Menu"
 import MobileNav from "../mobileNav/MobileNav"
 
 const Navbar = () => {
+  const [mobilenavVisible, setMobilenavVisible] = useState(false)
+  const toggleMobilenavVisible = () => {
+    setMobilenavVisible(!mobilenavVisible)
+  }
   return (
     <div className="navbar">
       <div className="navlinks">
@@ -47,9 +51,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hamburger">
-        <MenuIcon fontSize="large" />
+        <MenuIcon fontSize="large" onClick={toggleMobilenavVisible} />
       </div>
-      <MobileNav />
+      <MobileNav
+        toggleMobilenavVisible={toggleMobilenavVisible}
+        mobilenavVisible={mobilenavVisible}
+      />
     </div>
   )
 }

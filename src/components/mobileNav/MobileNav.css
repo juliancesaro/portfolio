@@ -1,16 +1,36 @@
-.mobilenav {
+.mobilenav-wrapper {
   position: absolute;
   top: 63px;
-  background-color: #333;
   width: 100%;
+  clip: rect(0, 9999px, 9999px, -9999px);
+}
+.mobilenav {
+  background-color: #333;
+}
+.mobilenav.on {
+  transition: transform ease-in-out 0.4s, opacity ease-out 0.3s;
+  transform: translateY(0);
+  opacity: 1;
+}
+.mobilenav.off {
+  transition: transform ease-in-out 0.4s, opacity ease-out 0.3s;
+  transform: translateY(-100%);
+  opacity: 1;
 }
 .mobilenavlinks {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-.mobilenavlinks a {
+.mobilenavlink {
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+#homelink {
+  color: orange;
+}
+.mobilenavlinks a {
+  text-align: left;
+  font-size: larger;
 }

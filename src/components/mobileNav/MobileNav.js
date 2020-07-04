@@ -2,47 +2,61 @@ import React from "react"
 import "./MobileNav.css"
 import { Link } from "react-scroll"
 
-const MobileNav = () => {
+const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
   return (
-    <div className="mobilenav">
-      <div className="mobilenavlinks">
-        <Link
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          HOME
-        </Link>
-        <Link
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={1}
-          duration={500}
-        >
-          ABOUT
-        </Link>
-        <Link
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          PROJECTS
-        </Link>
-        <Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          CONTACT
-        </Link>
+    <div className="mobilenav-wrapper">
+      <div className={"mobilenav " + (mobilenavVisible ? "on" : "off")}>
+        <div className="mobilenavlinks">
+          <div className="mobilenavlink" id="homelink">
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={toggleMobilenavVisible}
+            >
+              HOME
+            </Link>
+          </div>
+          <div className="mobilenavlink">
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={1}
+              duration={500}
+              onClick={toggleMobilenavVisible}
+            >
+              ABOUT
+            </Link>
+          </div>
+          <div className="mobilenavlink">
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={toggleMobilenavVisible}
+            >
+              PROJECTS
+            </Link>
+          </div>
+          <div className="mobilenavlink">
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={toggleMobilenavVisible}
+            >
+              CONTACT
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )
