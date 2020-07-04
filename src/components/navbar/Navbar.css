@@ -8,5 +8,5 @@
   height: 50px;
   background-color: #1b242f;
   border-bottom: 3px solid orange;
-  z-index: 1;
+  pointer-events: fill;
 }

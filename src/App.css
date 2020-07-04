@@ -28,7 +28,9 @@ body {
   height: 100%;
 }
 section {
+  position: relative;
   padding: 4rem;
+  height: 100vh;
 }
 section h1 {
   text-align: center;
