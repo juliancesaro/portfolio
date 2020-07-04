@@ -1,5 +1,6 @@
 import React from "react"
 import { Fade } from "react-reveal"
+import { Link } from "react-scroll"
 import "./Home.css"
 import Navbar from "../navbar/Navbar"
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle"
@@ -79,10 +80,19 @@ const AboutMe = () => {
           </h1>
           <h1>I'm an aspiring full-stack web developer.</h1>
           <div className="scroll-down">
-            <h2>Read More!</h2>
-            <span className="down-icon">
-              <ArrowDropDownCircleIcon />
-            </span>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-53}
+              duration={500}
+            >
+              <h2>Read More!</h2>
+              <span className="down-icon">
+                <ArrowDropDownCircleIcon />
+              </span>
+            </Link>
           </div>
         </Fade>
         <Navbar />

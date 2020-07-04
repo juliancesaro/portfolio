@@ -10,3 +10,6 @@
   border-bottom: 3px solid orange;
   pointer-events: fill;
 }
+.navbar a {
+  cursor: pointer;
+}
