@@ -31,7 +31,10 @@
   display: flex;
   flex-direction: column;
   height: 22px;
+  width: 1%;
   background: linear-gradient(90deg, #12adb3, #0f8488);
+  transform-origin: bottom left;
+  transition: transform 1s ease-in-out;
 }
 .skill-name {
   position: absolute;

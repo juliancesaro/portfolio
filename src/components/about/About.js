@@ -7,39 +7,39 @@ const About = () => {
   const softwareSkills = [
     {
       skillName: "html-5",
-      amount: "95%",
+      amount: "95",
     },
     {
       skillName: "css3",
-      amount: "85%",
+      amount: "85",
     },
     {
       skillName: "Java",
-      amount: "85%",
+      amount: "85",
     },
     {
       skillName: "JavaScript",
-      amount: "90%",
+      amount: "90",
     },
     {
       skillName: "reactjs",
-      amount: "95%",
+      amount: "95",
     },
     {
       skillName: "nodejs",
-      amount: "80%",
+      amount: "80",
     },
     {
       skillName: "sql",
-      amount: "85%",
+      amount: "85",
     },
     {
       skillName: "MongoDB",
-      amount: "60%",
+      amount: "60",
     },
     {
       skillName: "python",
-      amount: "55%",
+      amount: "55",
     },
   ]
   return (
@@ -77,12 +77,9 @@ const About = () => {
                           style={
                             isVisible
                               ? {
-                                  transition: "ease width 1s",
-                                  width: `${skills.amount}`,
+                                  transform: `scaleX(${skills.amount})`,
                                 }
-                              : {
-                                  width: 0,
-                                }
+                              : {}
                           }
                         ></div>
                       )}
