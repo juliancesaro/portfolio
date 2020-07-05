@@ -17,9 +17,18 @@ const Project = ({ link, name, tags, about, setFilter }) => {
           rel="noopener noreferrer"
         >
           {name === "GOshop" ? (
-            <img className="GOshop" src={GOshop} alt={name} width="200px"></img>
+            <div className="GOshop-wrapper">
+              <img
+                className="GOshop"
+                src={GOshop}
+                alt={name}
+                width="200px"
+              ></img>
+            </div>
           ) : name === "Vaporwave website" ? (
-            <h1 class="Vaporwave">VaporWave</h1>
+            <div className="Vaporwave-wrapper">
+              <h1 class="Vaporwave">VaporWave</h1>
+            </div>
           ) : (
             <p className="content-link">{name}:</p>
           )}

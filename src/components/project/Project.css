@@ -9,14 +9,27 @@
 .project-link {
   text-decoration: none;
 }
-.GOshop {
+.GOshop-wrapper {
+  width: 200px;
+  border-radius: 10px;
+  padding: 5px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background-color: white;
+}
+.Vaporwave-wrapper {
+  width: 210px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9def5;
 }
 .Vaporwave {
   text-align: left;
   font-family: vaporFont;
   color: #4196d3;
   letter-spacing: 10px;
-  font-size: 14pxpx;
+  font-size: 24px;
+  margin: 0;
 }
