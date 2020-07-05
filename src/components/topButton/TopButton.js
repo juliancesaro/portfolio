@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import "./TopButton.css";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import { Link } from "react-scroll";
+import React, { useState } from "react"
+import "./TopButton.css"
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward"
+import { Link } from "react-scroll"
 
 const TopButton = () => {
-  const [topButtonVisible, setTopButtonVisible] = useState(false);
+  const [topButtonVisible, setTopButtonVisible] = useState(false)
   // When the user scrolls down 20px from the top of the document, show the button
   const scrollFunction = () => {
     if (
-      document.body.scrollTop > 200 ||
-      document.documentElement.scrollTop > 800
+      document.body.scrollTop > 750 ||
+      document.documentElement.scrollTop > 750
     ) {
-      setTopButtonVisible(true);
+      setTopButtonVisible(true)
     } else {
-      setTopButtonVisible(false);
+      setTopButtonVisible(false)
     }
-  };
+  }
   window.onscroll = function () {
-    scrollFunction();
-  };
+    scrollFunction()
+  }
   window.onload = function () {
-    scrollFunction();
-  };
+    scrollFunction()
+  }
   return (
     <Link
       activeClass="active"
@@ -39,7 +39,7 @@ const TopButton = () => {
         </i>
       </button>
     </Link>
-  );
-};
+  )
+}
 
-export default TopButton;
+export default TopButton
