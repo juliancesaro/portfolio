@@ -1,5 +1,4 @@
-#topButton {
-  visibility: hidden;
+.topButton {
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -12,4 +11,12 @@
   padding: 10px;
   border-radius: 15px;
   font-size: 25px;
+}
+.topButton.on {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+}
+.topButton.off {
+  opacity: 0;
+  transition: opacity 0.1s linear;
 }

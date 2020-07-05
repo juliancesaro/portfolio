@@ -8,7 +8,6 @@ import Footer from "./components/footer/Footer";
 import TopButton from "./components/topButton/TopButton";
 
 function App() {
-  console.log(document.documentElement.scrollTop);
   return (
     <div className="App">
       <Home />
