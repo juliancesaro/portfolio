@@ -8,6 +8,7 @@
 .skills-wrapper {
   position: relative;
   width: 100%;
+  max-width: 750px;
   text-align: center;
 }
 .skills {
@@ -49,7 +50,7 @@
 @media screen and (min-width: 960px) {
   .about-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 @media screen and (max-width: 959px) {

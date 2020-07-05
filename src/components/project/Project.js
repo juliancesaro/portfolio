@@ -22,7 +22,7 @@ const Project = ({ link, name, tags, about, setFilter }) => {
                 className="GOshop"
                 src={GOshop}
                 alt={name}
-                width="200px"
+                width="150px"
               ></img>
             </div>
           ) : name === "Vaporwave website" ? (

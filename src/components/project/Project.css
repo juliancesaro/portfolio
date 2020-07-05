@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 .GOshop-wrapper {
-  width: 200px;
+  width: 155px;
   border-radius: 10px;
   padding: 5px;
   margin-top: 1rem;
@@ -18,9 +18,9 @@
   background-color: white;
 }
 .Vaporwave-wrapper {
-  width: 210px;
+  width: 185px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px 10px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #f9def5;
@@ -30,6 +30,6 @@
   font-family: vaporFont;
   color: #4196d3;
   letter-spacing: 10px;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
 }
