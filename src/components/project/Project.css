@@ -1,0 +1,22 @@
+@font-face {
+  font-family: vaporFont;
+  src: url(../../fonts/Vaporfont.ttf) format("truetype");
+}
+.content-link {
+  color: orange;
+  text-decoration: none;
+}
+.project-link {
+  text-decoration: none;
+}
+.GOshop {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.Vaporwave {
+  text-align: left;
+  font-family: vaporFont;
+  color: #4196d3;
+  letter-spacing: 10px;
+  font-size: 14pxpx;
+}

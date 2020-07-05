@@ -1,17 +1,17 @@
-import React from "react";
-import "./Contact.css";
-import Section from "../section/Section";
-import Bounce from "react-reveal/Bounce";
-import linkedin from "../../images/linkedin.png";
-import github from "../../images/github.png";
-import facebook from "../../images/facebook.png";
+import React from "react"
+import "./Contact.css"
+import Section from "../section/Section"
+import Bounce from "react-reveal/Bounce"
+import linkedin from "../../images/linkedin.png"
+import github from "../../images/github.png"
+import facebook from "../../images/facebook.png"
 
 const Contact = () => {
   return (
     <section className="contact">
       <Section title="Contact">
         <p className="email">julianjcesaro@gmail.com</p>
-        <Bounce>
+        <Bounce cascade>
           <div className="links">
             <a
               href="https://github.com/juliancesaro"
@@ -39,7 +39,7 @@ const Contact = () => {
         </Bounce>
       </Section>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

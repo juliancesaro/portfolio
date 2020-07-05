@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   height: 22px;
-  background-color: #0f8488;
+  background: linear-gradient(90deg, #12adb3, #0f8488);
 }
 .skill-name {
   position: absolute;
@@ -42,7 +42,7 @@
   width: 75px;
   height: 22px;
   font-size: 14px;
-  background-color: #12adb3;
+  background-color: #11a8ad;
   font-weight: bold;
   color: white;
 }

@@ -1,6 +1,7 @@
-import React from "react";
-import "./About.css";
-import Section from "../section/Section";
+import React from "react"
+import "./About.css"
+import IsVisible from "react-is-visible"
+import Section from "../section/Section"
 
 const About = () => {
   const softwareSkills = [
@@ -40,7 +41,7 @@ const About = () => {
       skillName: "python",
       amount: "55%",
     },
-  ];
+  ]
   return (
     <section className="about">
       <Section title="About">
@@ -69,22 +70,33 @@ const About = () => {
               {softwareSkills.map((skills) => {
                 return (
                   <li className="skill-bar-wrapper" key={skills.skillName}>
-                    <div
-                      className="skill-bar"
-                      style={{
-                        width: `${skills.amount}`,
-                      }}
-                    ></div>
+                    <IsVisible once>
+                      {(isVisible) => (
+                        <div
+                          className="skill-bar"
+                          style={
+                            isVisible
+                              ? {
+                                  transition: "ease width 1s",
+                                  width: `${skills.amount}`,
+                                }
+                              : {
+                                  width: 0,
+                                }
+                          }
+                        ></div>
+                      )}
+                    </IsVisible>
                     <div className="skill-name">{skills.skillName}</div>
                   </li>
-                );
+                )
               })}
             </ul>
           </div>
         </div>
       </Section>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About
