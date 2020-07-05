@@ -1,39 +1,62 @@
 .about {
   background-color: #2d323f;
 }
-.about-content {
-  display: flex;
-}
 .about-text {
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
 }
-.software-skills-main-div {
-  margin-left: 20px;
+.skills-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
-.dev-icons {
+.skills {
+  position: relative;
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  margin: 0 auto;
+  width: 90%;
 }
-.software-skill-inline {
-  margin-right: 20px;
+.skill-bar-wrapper {
+  position: relative;
+  display: flex;
+  background-color: #3e4555;
+  height: 22px;
   margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.software-skill-inline > i {
-  color: #868e96;
+.skill-bar {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 22px;
+  background-color: #0f8488;
 }
-
-.software-skill-inline > i:hover {
-  color: #645beb;
-}
-.software-skill-inline > p {
-  text-align: left;
+.skill-name {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 75px;
+  height: 22px;
+  font-size: 14px;
+  background-color: #12adb3;
+  font-weight: bold;
   color: white;
-  font-size: 20px;
 }
-.software-skill-inline > i:hover ~ p {
-  color: #645beb;
+@media screen and (min-width: 960px) {
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 959px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

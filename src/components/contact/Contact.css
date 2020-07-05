@@ -1,3 +1,13 @@
 .contact {
   background-color: #2d323f;
 }
+.email {
+  margin-top: 50px;
+  text-align: center;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}

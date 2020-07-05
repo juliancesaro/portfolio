@@ -1,6 +1,6 @@
-import React from "react"
-import "./Section.css"
-import { Fade } from "react-reveal"
+import React from "react";
+import "./Section.css";
+import { Fade } from "react-reveal";
 
 const Section = (props) => {
   return (
@@ -13,7 +13,7 @@ const Section = (props) => {
       </Fade>
       <Fade duration={1000}>{props.children}</Fade>
     </>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

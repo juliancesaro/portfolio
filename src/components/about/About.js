@@ -1,52 +1,52 @@
-import React from "react"
-import "./About.css"
-import Section from "../section/Section"
+import React from "react";
+import "./About.css";
+import Section from "../section/Section";
 
 const About = () => {
   const softwareSkills = [
     {
       skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5",
+      amount: "95%",
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt",
+      amount: "85%",
     },
     {
       skillName: "Java",
-      fontAwesomeClassname: "fab fa-sass",
+      amount: "85%",
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js",
+      amount: "90%",
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react",
+      amount: "95%",
     },
     {
       skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node",
+      amount: "80%",
     },
     {
       skillName: "sql",
-      fontAwesomeClassname: "fas fa-database",
+      amount: "85%",
     },
     {
       skillName: "MongoDB",
-      fontAwesomeClassname: "fab fa-aws",
+      amount: "60%",
     },
     {
       skillName: "python",
-      fontAwesomeClassname: "fab fa-python",
+      amount: "55%",
     },
-  ]
+  ];
   return (
     <section className="about">
       <Section title="About">
         <div className="about-content">
           <div className="about-text">
-            <h3>Who am I?</h3>
+            <h2>Who am I?</h2>
             <p>I'm Julian.</p>
             <p>
               I'm currently a fourth-year software engineering student at
@@ -63,23 +63,28 @@ const About = () => {
               projects and read a bit about myself. View away!
             </p>
           </div>
-          <div className="software-skills-main-div">
-            <h3>Skills</h3>
-            <ul className="dev-icons">
+          <div className="skills-wrapper">
+            <h2>Skills</h2>
+            <ul className="skills">
               {softwareSkills.map((skills) => {
                 return (
-                  <li className="software-skill-inline" name={skills.skillName}>
-                    <i className={skills.fontAwesomeClassname}></i>
-                    <p>{skills.skillName}</p>
+                  <li className="skill-bar-wrapper" key={skills.skillName}>
+                    <div
+                      className="skill-bar"
+                      style={{
+                        width: `${skills.amount}`,
+                      }}
+                    ></div>
+                    <div className="skill-name">{skills.skillName}</div>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
         </div>
       </Section>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

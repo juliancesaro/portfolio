@@ -11,7 +11,8 @@ body {
   }
   section {
     position: relative;
-    padding: 4rem;
+    padding: 6rem;
+    padding-bottom: 0;
   }
 }
 @media screen and (max-width: 599px) {
@@ -21,6 +22,7 @@ body {
   section {
     position: relative;
     padding: 2rem;
+    padding-bottom: 0;
   }
 }
 body {

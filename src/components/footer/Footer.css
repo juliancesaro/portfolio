@@ -1,8 +1,6 @@
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
+footer {
+  background-color: #2d323f;
+  padding-bottom: 10px;
 }
 .copyright {
   text-align: center;
