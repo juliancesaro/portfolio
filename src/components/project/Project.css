@@ -2,6 +2,58 @@
   font-family: vaporFont;
   src: url(../../fonts/Vaporfont.ttf) format("truetype");
 }
+@media screen and (min-width: 350px) {
+  .Vaporwave-wrapper {
+    width: 185px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f9def5;
+  }
+  .Vaporwave {
+    text-align: left;
+    font-family: vaporFont;
+    color: #4196d3;
+    letter-spacing: 10px;
+    font-size: 20px;
+    margin: 0;
+  }
+  .GOshop-wrapper {
+    width: 155px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+  }
+  .GOshop_small {
+    display: none;
+  }
+}
+@media screen and (max-width: 349px) {
+  .Vaporwave-wrapper {
+    width: 110px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f9def5;
+  }
+  .Vaporwave {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: left;
+    font-family: vaporFont;
+    color: #4196d3;
+    letter-spacing: 10px;
+    font-size: 20px;
+    margin: 0;
+  }
+  .GOshop-wrapper {
+    width: 85px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+  }
+  .GOshop {
+    display: none;
+  }
+}
 .project-card {
   margin: 20px 0px 20px 0px;
   padding: 10px 20px 10px 20px;
@@ -14,29 +66,8 @@
   font-size: larger;
 }
 .project-link {
+  display: inline-block;
   text-decoration: none;
-}
-.GOshop-wrapper {
-  width: 155px;
-  border-radius: 5px;
-  padding: 5px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: white;
-}
-.Vaporwave-wrapper {
-  width: 185px;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #f9def5;
-}
-.Vaporwave {
-  text-align: left;
-  font-family: vaporFont;
-  color: #4196d3;
-  letter-spacing: 10px;
-  font-size: 20px;
-  margin: 0;
 }

@@ -2,6 +2,7 @@ import React from "react"
 import "./Project.css"
 import Tags from "../tags/Tags"
 import GOshop from "../../images/GOshop.png"
+import GOshop_small from "../../images/GOshop-small.png"
 
 const Project = ({ link, name, tags, about, setFilter }) => {
   // If the project link is empty, the project is "coming soon"
@@ -23,6 +24,12 @@ const Project = ({ link, name, tags, about, setFilter }) => {
                 src={GOshop}
                 alt={name}
                 width="150px"
+              ></img>
+              <img
+                className="GOshop_small"
+                src={GOshop_small}
+                alt={name}
+                width="80px"
               ></img>
             </div>
           ) : name === "Vaporwave website" ? (
