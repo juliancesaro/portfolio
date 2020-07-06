@@ -35,7 +35,7 @@ const About = () => {
       amount: "70%",
     },
     {
-      skillName: "NodeJS",
+      skillName: "Node.js",
       amount: "65%",
     },
     {
