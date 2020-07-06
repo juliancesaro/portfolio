@@ -12,6 +12,9 @@
   border-radius: 15px;
   font-size: 25px;
 }
+.topButton i {
+  display: flex;
+}
 .topButton.on {
   opacity: 1;
   transition: opacity 0.1s linear;
