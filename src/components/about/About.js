@@ -6,39 +6,43 @@ import Section from "../section/Section"
 const About = () => {
   const softwareSkills = [
     {
-      skillName: "html-5",
-      amount: "95%",
-    },
-    {
-      skillName: "css3",
-      amount: "85%",
-    },
-    {
       skillName: "Java",
-      amount: "85%",
-    },
-    {
-      skillName: "JavaScript",
       amount: "90%",
     },
     {
-      skillName: "reactjs",
-      amount: "95%",
-    },
-    {
-      skillName: "nodejs",
-      amount: "80%",
-    },
-    {
-      skillName: "sql",
+      skillName: "JavaScript",
       amount: "85%",
     },
     {
-      skillName: "MongoDB",
-      amount: "60%",
+      skillName: "TypeScript",
+      amount: "75%",
     },
     {
-      skillName: "python",
+      skillName: "HTML",
+      amount: "80%",
+    },
+    {
+      skillName: "CSS",
+      amount: "80%",
+    },
+    {
+      skillName: "React",
+      amount: "75%",
+    },
+    {
+      skillName: "SQL",
+      amount: "70%",
+    },
+    {
+      skillName: "NodeJS",
+      amount: "65%",
+    },
+    {
+      skillName: "Python",
+      amount: "70%",
+    },
+    {
+      skillName: "MongoDB",
       amount: "55%",
     },
   ]

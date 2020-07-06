@@ -2,9 +2,16 @@
   font-family: vaporFont;
   src: url(../../fonts/Vaporfont.ttf) format("truetype");
 }
+.project-card {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3e4555;
+}
 .content-link {
   color: orange;
   text-decoration: none;
+  font-size: larger;
 }
 .project-link {
   text-decoration: none;

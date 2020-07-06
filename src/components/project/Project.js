@@ -6,7 +6,7 @@ import GOshop from "../../images/GOshop.png"
 const Project = ({ link, name, tags, about, setFilter }) => {
   // If the project link is empty, the project is "coming soon"
   return (
-    <div>
+    <div className="project-card">
       {link.length === 0 ? (
         <p className="content-link">{name} (coming soon):</p>
       ) : (
