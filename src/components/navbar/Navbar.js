@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import "./Navbar.css"
 import { Link } from "react-scroll"
-import MenuIcon from "@material-ui/icons/Menu"
 import MobileNav from "../mobileNav/MobileNav"
 
 const Navbar = () => {
@@ -60,7 +59,7 @@ const Navbar = () => {
       </div>
       <div className="hamburger">
         <div
-          id="nav-icon3"
+          id="hamburger-icon"
           className={hamburgerClass}
           onClick={toggleMobilenavVisible}
         >
