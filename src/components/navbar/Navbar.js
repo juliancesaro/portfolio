@@ -6,8 +6,14 @@ import MobileNav from "../mobileNav/MobileNav"
 
 const Navbar = () => {
   const [mobilenavVisible, setMobilenavVisible] = useState(false)
+  const [hamburgerClass, setHamburgerClass] = useState("")
   const toggleMobilenavVisible = () => {
     setMobilenavVisible(!mobilenavVisible)
+    if (hamburgerClass === "") {
+      setHamburgerClass("open")
+    } else {
+      setHamburgerClass("")
+    }
   }
   return (
     <div className="navbar">
@@ -53,7 +59,16 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hamburger">
-        <MenuIcon fontSize="large" onClick={toggleMobilenavVisible} />
+        <div
+          id="nav-icon3"
+          className={hamburgerClass}
+          onClick={toggleMobilenavVisible}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <MobileNav
         toggleMobilenavVisible={toggleMobilenavVisible}

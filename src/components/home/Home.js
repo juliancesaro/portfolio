@@ -1,12 +1,12 @@
-import React from "react";
-import Fade from "react-reveal/Fade";
-import { Link } from "react-scroll";
-import "./Home.css";
-import Navbar from "../navbar/Navbar";
-import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
-import Particles from "react-particles-js";
-import emoji from "react-easy-emoji";
-import julian from "../../images/julian.png";
+import React from "react"
+import Fade from "react-reveal/Fade"
+import { Link } from "react-scroll"
+import "./Home.css"
+import Navbar from "../navbar/Navbar"
+import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle"
+import Particles from "react-particles-js"
+import emoji from "react-easy-emoji"
+import julian from "../../images/julian.png"
 
 const AboutMe = () => {
   return (
@@ -101,7 +101,7 @@ const AboutMe = () => {
         <Navbar />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe
