@@ -8,6 +8,31 @@
     width: 80px;
   }
 }
+@media screen and (min-height: 600px) {
+  .scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 170px;
+  }
+}
+@media screen and (max-height: 599px) and (min-height: 410px) {
+  .scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 100px;
+  }
+}
+@media screen and (max-height: 409px) {
+  .scroll-down {
+    display: none;
+  }
+}
 .home {
   position: relative;
   display: flex;
@@ -27,14 +52,7 @@
 .name {
   color: orange;
 }
-.scroll-down {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 170px;
-}
+
 .scroll-down-element {
   display: inline-block;
 }

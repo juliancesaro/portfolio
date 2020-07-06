@@ -23,7 +23,7 @@ const Projects = () => {
           </div>
           <ul className="projects-list">
             {projectsToShow.map((project) => (
-              <Fade bottom duration={1000} distance="70px">
+              <Fade bottom duration={1000} distance="20px">
                 <li key={project.name}>
                   <Project
                     link={project.link}
