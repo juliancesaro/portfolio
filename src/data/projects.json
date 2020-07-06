@@ -4,13 +4,13 @@
       "link": "https://whispering-oasis-98910.herokuapp.com/",
       "name": "GOshop",
       "tags": ["ReactJS", "Node.js", "MongoDB"],
-      "about": "GOshop is a full-stack mock online store still under development. Currently, users can create an account, post items, and add items to their cart. The project is hosted using Heroku."
+      "about": "GOshop is a full-stack mock online store. Users can create an account, log in, post items, and add items to their cart. The project was developed using ReactJS, Node.js, MongoDB, and is hosted using Heroku."
     },
     {
       "link": "https://juliancesaro.github.io/vaporwave-website/",
       "name": "Vaporwave website",
       "tags": ["HTML", "CSS", "JS"],
-      "about": "This project is a website detailing the popular music microgenre 'vaporwave'. It includes a music player made with jQuery, allowing users to load and play songs mentioned throughout the content of the website."
+      "about": "This project is a website detailing the popular music microgenre 'vaporwave'. It includes a music player made with jQuery which allows users to load and play songs mentioned throughout the content of the website."
     },
     {
       "link": "",
