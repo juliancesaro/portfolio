@@ -7,7 +7,7 @@ const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
     <div className="mobilenav-wrapper">
       <div className={"mobilenav " + (mobilenavVisible ? "on" : "off")}>
         <div className="mobilenavlinks">
-          <div className="mobilenavlink" id="homelink">
+          <div className="mobilenavlink">
             <Link
               activeClass="active"
               to="home"

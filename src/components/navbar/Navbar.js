@@ -17,17 +17,15 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navlinks">
-        <div id="homelink">
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            HOME
-          </Link>
-        </div>
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          HOME
+        </Link>
         <Link
           activeClass="active"
           to="about"
