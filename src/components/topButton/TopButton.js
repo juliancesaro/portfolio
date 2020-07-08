@@ -8,8 +8,8 @@ const TopButton = () => {
   // When the user scrolls down 20px from the top of the document, show the button
   const scrollFunction = () => {
     if (
-      document.body.scrollTop > 750 ||
-      document.documentElement.scrollTop > 750
+      document.body.scrollTop > window.innerHeight + 63 ||
+      document.documentElement.scrollTop > window.innerHeight + 63
     ) {
       setTopButtonVisible(true)
     } else {
@@ -25,10 +25,11 @@ const TopButton = () => {
   return (
     <Link
       activeClass="active"
-      to="home"
+      to="about"
       spy={true}
       smooth={true}
       duration={500}
+      offset={-63}
     >
       <button
         className={"topButton " + (topButtonVisible ? "on" : "off")}
