@@ -56,7 +56,7 @@ const About = () => {
               <h2>Who am I?</h2>
               <p>I'm Julian.</p>
               <p>
-                I'm currently a fourth-year software engineering student at
+                I'm a fourth-year software engineering student studying at
                 Macquarie University. I'm also an aspiring full-stack developer.
               </p>
               <p>
