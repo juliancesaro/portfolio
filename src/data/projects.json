@@ -13,7 +13,7 @@
       "about": "This project is a website detailing the popular music microgenre 'vaporwave'. It includes a music player made with jQuery which allows users to load and play songs mentioned throughout the content of the website."
     },
     {
-      "link": "",
+      "link": "https://juliancesaro.github.io/game-of-life/",
       "name": "Conway's Game of Life",
       "tags": ["ReactJS", "Node.js"],
       "about": "An implementation of John Conway's Game of Life using ReactJS and Node.js."

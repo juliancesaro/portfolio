@@ -71,3 +71,8 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.game-of-life {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: white;
+}

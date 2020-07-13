@@ -36,6 +36,10 @@ const Project = ({ link, name, tags, about, setFilter }) => {
             <div className="Vaporwave-wrapper">
               <h1 className="Vaporwave">VaporWave</h1>
             </div>
+          ) : name === "Conway's Game of Life" ? (
+            <div className="Conway-wrapper">
+              <h1 className="game-of-life">Conway's Game of Life</h1>
+            </div>
           ) : (
             <p className="content-link">{name}:</p>
           )}
