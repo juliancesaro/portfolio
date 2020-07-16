@@ -3,9 +3,6 @@
   border-radius: 4px;
   background-color: #515a68;
 }
-.tag:hover {
-  cursor: pointer;
-}
 .tagname {
   font-family: Consolas, monaco, monospace;
   font-size: 14px;

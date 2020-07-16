@@ -1,12 +1,10 @@
 import React from "react"
 import "./Tag.css"
 
-const Tag = ({ tagName, setFilter }) => {
+const Tag = ({ tagName }) => {
   return (
     <div className="tag">
-      <p className="tagname" onClick={() => setFilter(tagName)}>
-        {tagName}
-      </p>
+      <p className="tagname">{tagName}</p>
     </div>
   )
 }

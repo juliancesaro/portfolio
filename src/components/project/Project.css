@@ -7,6 +7,7 @@
     width: 185px;
     border-radius: 5px;
     padding: 5px 10px;
+    margin: 1rem 0;
     background-color: #f9def5;
   }
   .Vaporwave {
@@ -21,6 +22,7 @@
     width: 155px;
     border-radius: 5px;
     padding: 5px;
+    margin: 1rem 0;
     background-color: white;
   }
   .GOshop_small {
@@ -32,6 +34,7 @@
     width: 110px;
     border-radius: 5px;
     padding: 5px 10px;
+    margin: 1rem 0;
     background-color: #f9def5;
   }
   .Vaporwave {
@@ -48,17 +51,28 @@
     width: 85px;
     border-radius: 5px;
     padding: 5px;
+    margin: 1rem 0;
     background-color: white;
   }
   .GOshop {
     display: none;
   }
 }
-.project-card {
+.project-card-wrapper {
   margin: 20px 0px 20px 0px;
+}
+.project-card-dead {
   padding: 10px 20px 10px 20px;
   border-radius: 5px;
-  background-color: #3e4555;
+  background-color: #3b4353;
+}
+.project-card {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  background-color: #3b4353;
+}
+.project-card:hover {
+  background-color: #424a5c;
 }
 .content-link {
   color: orange;
@@ -68,11 +82,11 @@
 .project-link {
   display: inline-block;
   text-decoration: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  color: white;
 }
 .game-of-life {
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  text-align: left;
+  margin: 1rem 0;
   color: white;
 }

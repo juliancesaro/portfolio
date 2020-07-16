@@ -15,8 +15,13 @@
 .projects-content {
   max-width: 1000px;
 }
-.alltag {
+.tagslist {
   display: flex;
-  margin: 0 auto;
+  width: 90%;
+  margin: 30px auto 0 auto;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
   width: 90%;
 }
