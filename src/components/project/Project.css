@@ -83,6 +83,7 @@
   display: inline-block;
   text-decoration: none;
   color: white;
+  width: 100%;
 }
 .game-of-life {
   font-family: "Poppins", sans-serif;
