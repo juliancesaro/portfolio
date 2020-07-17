@@ -5,10 +5,20 @@
   width: 100%;
   max-width: 600px;
 }
+.about-text > ul {
+  list-style-type: none;
+}
+.about-text > ul > li {
+  margin-bottom: 10px;
+}
+.location-wrapper {
+  display: flex;
+  align-items: center;
+}
 .skills-wrapper {
   position: relative;
   width: 100%;
-  max-width: 750px;
+  max-width: 600px;
   text-align: center;
 }
 .skills {
@@ -36,7 +46,6 @@
   background-color: #0d7c7f;
   border-radius: 2px 0px 0px 2px;
 }
-
 @media screen and (min-width: 960px) {
   .about-content {
     display: flex;

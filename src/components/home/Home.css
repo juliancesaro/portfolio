@@ -1,11 +1,15 @@
 @media screen and (min-width: 600px) {
   .julian {
     width: 120px;
+    border-radius: 50%;
+    border: 0.2rem solid orange;
   }
 }
 @media screen and (max-width: 599px) {
   .julian {
     width: 80px;
+    border-radius: 50%;
+    border: 0.2rem solid orange;
   }
 }
 @media screen and (min-height: 600px) {
