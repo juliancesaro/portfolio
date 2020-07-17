@@ -28,10 +28,12 @@
 }
 .project-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .project-info-left {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
 }
 .project-info-right {
