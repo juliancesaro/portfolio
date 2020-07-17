@@ -2,12 +2,12 @@ import React from "react"
 import "./Tags.css"
 import Tag from "../tag/Tag"
 
-const Tags = ({ tagNames }) => {
+const Tags = ({ tags }) => {
   return (
     <ul className="tags">
-      {tagNames.map((tag) => (
-        <li key={tag}>
-          <Tag tagName={tag} />
+      {tags.map((tag) => (
+        <li key={tag.topic.name}>
+          <Tag tagName={tag.topic.name} />
         </li>
       ))}
     </ul>

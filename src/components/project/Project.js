@@ -1,5 +1,6 @@
 import React from "react"
 import "./Project.css"
+import Tags from "../tags/Tags"
 
 const Project = ({ project }) => {
   return (
@@ -28,6 +29,7 @@ const Project = ({ project }) => {
             </svg>
             <h2 className="project-title">{project.name}</h2>
           </div>
+          <Tags tags={project.repositoryTopics.nodes} />
           <p>{project.description}</p>
           <div className="project-info">
             <div className="project-info-left">
