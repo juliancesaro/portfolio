@@ -1,4 +1,4 @@
-# Portfolio v2
+# Portfolio
 
 A responsive web developer portfolio.
 
