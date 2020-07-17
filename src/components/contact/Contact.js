@@ -12,7 +12,6 @@ const Contact = () => {
     <section className="contact">
       <Section title="Contact">
         <ContactForm />
-        <p className="email">julianjcesaro@gmail.com</p>
         <Bounce cascade>
           <div className="links">
             <a
