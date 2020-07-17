@@ -2,6 +2,7 @@ import React from "react"
 import "./Contact.css"
 import Section from "../section/Section"
 import Bounce from "react-reveal/Bounce"
+import ContactForm from "../contactForm/ContactForm"
 import linkedin from "../../images/linkedin.png"
 import github from "../../images/github.png"
 import facebook from "../../images/facebook.png"
@@ -10,6 +11,7 @@ const Contact = () => {
   return (
     <section className="contact">
       <Section title="Contact">
+        <ContactForm />
         <p className="email">julianjcesaro@gmail.com</p>
         <Bounce cascade>
           <div className="links">
