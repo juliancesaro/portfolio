@@ -1,93 +1,57 @@
-@font-face {
-  font-family: vaporFont;
-  src: url(../../fonts/Vaporfont.ttf) format("truetype");
-}
-@media screen and (min-width: 350px) {
-  .Vaporwave-wrapper {
-    width: 185px;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 1rem 0;
-    background-color: #f9def5;
-  }
-  .Vaporwave {
-    text-align: left;
-    font-family: vaporFont;
-    color: #4196d3;
-    letter-spacing: 10px;
-    font-size: 20px;
-    margin: 0;
-  }
-  .GOshop-wrapper {
-    width: 155px;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 1rem 0;
-    background-color: white;
-  }
-  .GOshop_small {
-    display: none;
-  }
-}
-@media screen and (max-width: 349px) {
-  .Vaporwave-wrapper {
-    width: 110px;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 1rem 0;
-    background-color: #f9def5;
-  }
-  .Vaporwave {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    text-align: left;
-    font-family: vaporFont;
-    color: #4196d3;
-    letter-spacing: 10px;
-    font-size: 20px;
-    margin: 0;
-  }
-  .GOshop-wrapper {
-    width: 85px;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 1rem 0;
-    background-color: white;
-  }
-  .GOshop {
-    display: none;
-  }
+.project-link {
+  color: white;
+  text-decoration: none;
 }
 .project-card-wrapper {
   margin: 20px 0px 20px 0px;
-}
-.project-card-dead {
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  background-color: #3b4353;
 }
 .project-card {
   padding: 10px 20px 10px 20px;
   border-radius: 5px;
   background-color: #3b4353;
+  transition: 0.2s;
 }
 .project-card:hover {
-  background-color: #424a5c;
+  background-color: #474f63;
+  transform: translateX(-10px);
 }
-.content-link {
-  color: orange;
-  text-decoration: none;
-  font-size: larger;
+.project-name {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
 }
-.project-link {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  width: 100%;
+.project-title {
+  margin: 0;
 }
-.game-of-life {
-  font-family: "Poppins", sans-serif;
-  text-align: left;
-  margin: 1rem 0;
-  color: white;
+.octicon {
+  margin-right: 10px;
+}
+.project-info {
+  display: flex;
+  justify-content: space-between;
+}
+.project-info-left {
+  display: flex;
+  justify-content: left;
+}
+.project-info-right {
+  display: flex;
+  justify-content: right;
+}
+.language {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.language-colour {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.language-name {
+  font-size: small;
+}
+.project-size {
+  font-size: small;
 }
