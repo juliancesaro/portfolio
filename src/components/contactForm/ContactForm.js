@@ -47,6 +47,21 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  submit: {
+    "&": {
+      backgroundColor: "#0d7c7f",
+      boxShadow: "none",
+      "&:hover": {
+        backgroundColor: "#0d6d70",
+        boxShadow: "none",
+      },
+    },
+    "& > *": {
+      color: "white",
+      fontSize: "15px",
+      fontWeight: "500",
+    },
+  },
 }))
 
 const ContactForm = () => {
@@ -118,7 +133,7 @@ const ContactForm = () => {
         {status === "SUCCESS" ? (
           <p className="email-success">Thanks!</p>
         ) : (
-          <Button type="submit" variant="contained">
+          <Button className={classes.submit} type="submit" variant="contained">
             Submit
           </Button>
         )}

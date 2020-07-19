@@ -25,3 +25,7 @@
   flex-wrap: wrap;
   width: 90%;
 }
+.more-projects-wrapper {
+  display: flex;
+  justify-content: center;
+}
