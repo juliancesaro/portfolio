@@ -63,7 +63,6 @@ const Projects = () => {
         query,
       })
       setGithubProjects(queryResult.data.user.pinnedItems.edges)
-      console.log(queryResult.data.user.pinnedItems.edges)
     } catch (error) {
       console.log(error)
       setLoadProjectsError(true)
