@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   border-top: 1px solid white;
+  width: 70%;
 }
 .skills-wrapper {
   position: relative;
