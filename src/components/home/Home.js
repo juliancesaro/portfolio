@@ -8,7 +8,7 @@ import Particles from "react-particles-js"
 import emoji from "react-easy-emoji"
 import julian from "../../images/julian.png"
 
-const AboutMe = () => {
+const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="home">
@@ -104,4 +104,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default Home
