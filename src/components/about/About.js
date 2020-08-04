@@ -65,10 +65,6 @@ const About = () => {
                 technologies.
               </p>
               <p>
-                {emoji("⚡")} I'm imaginative, I'm a fast learner, and I love
-                solving problems.
-              </p>
-              <p>
                 I've always been passionate about technology, which is why I
                 decided to start studying software engineering nearly four years
                 ago. Since then, I've learned a lot and aim to continue learning
