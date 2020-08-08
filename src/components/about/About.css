@@ -11,6 +11,16 @@
 .about-text > ul > li {
   margin-bottom: 10px;
 }
+.typewriter {
+  display: flex;
+  align-items: center;
+}
+.typewriter-start {
+  padding-right: 5px;
+}
+.typewriter > p {
+  margin: 0;
+}
 .location-wrapper {
   display: flex;
   align-items: center;

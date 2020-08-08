@@ -3,51 +3,53 @@ import "./About.css"
 import IsVisible from "react-is-visible"
 import Section from "../section/Section"
 import { Fade } from "react-reveal"
+import Typewriter from "typewriter-effect"
 import emoji from "react-easy-emoji"
 
+const softwareSkills = [
+  {
+    skillName: "Java",
+    amount: "90%",
+  },
+  {
+    skillName: "JavaScript",
+    amount: "85%",
+  },
+  {
+    skillName: "TypeScript",
+    amount: "75%",
+  },
+  {
+    skillName: "HTML",
+    amount: "80%",
+  },
+  {
+    skillName: "CSS",
+    amount: "80%",
+  },
+  {
+    skillName: "React",
+    amount: "75%",
+  },
+  {
+    skillName: "SQL",
+    amount: "70%",
+  },
+  {
+    skillName: "Node.js",
+    amount: "65%",
+  },
+  {
+    skillName: "Python",
+    amount: "70%",
+  },
+  {
+    skillName: "MongoDB",
+    amount: "55%",
+  },
+]
+
 const About = () => {
-  const softwareSkills = [
-    {
-      skillName: "Java",
-      amount: "90%",
-    },
-    {
-      skillName: "JavaScript",
-      amount: "85%",
-    },
-    {
-      skillName: "TypeScript",
-      amount: "75%",
-    },
-    {
-      skillName: "HTML",
-      amount: "80%",
-    },
-    {
-      skillName: "CSS",
-      amount: "80%",
-    },
-    {
-      skillName: "React",
-      amount: "75%",
-    },
-    {
-      skillName: "SQL",
-      amount: "70%",
-    },
-    {
-      skillName: "Node.js",
-      amount: "65%",
-    },
-    {
-      skillName: "Python",
-      amount: "70%",
-    },
-    {
-      skillName: "MongoDB",
-      amount: "55%",
-    },
-  ]
   return (
     <section className="about">
       <Section title="About">
@@ -64,6 +66,24 @@ const About = () => {
                 {emoji("⚡")} I enjoy creating projects and learning new
                 technologies.
               </p>
+              <div className="typewriter">
+                <p className="typewriter-start">{emoji("⚡")} I'm</p>
+                <Typewriter
+                  options={{
+                    strings: [
+                      "a fast learner",
+                      "creative",
+                      "inquisitive",
+                      "a problem solver",
+                      "a leader",
+                      "a communicator",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+                <p>.</p>
+              </div>
               <p>
                 I've always been passionate about technology, which is why I
                 decided to start studying software engineering nearly four years
