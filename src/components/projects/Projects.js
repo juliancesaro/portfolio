@@ -40,7 +40,7 @@ const client = new ApolloClient({
 const query = gql`
   {
     user(login: "juliancesaro") {
-      pinnedItems(first: 4, types: [REPOSITORY]) {
+      pinnedItems(first: 5, types: [REPOSITORY]) {
         totalCount
         edges {
           node {
