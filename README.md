@@ -8,7 +8,7 @@ Live demo can be found here: www.juliancesaro.live
 
 ---
 
-## Technologies
+## Technologies and packages
 
 - [React](https://reactjs.org/)
 - [graphql](https://graphql.org/) 
