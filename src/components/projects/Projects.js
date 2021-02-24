@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react"
-import "./Projects.css"
-import Project from "../project/Project"
-import Section from "../section/Section"
-import { Fade } from "react-reveal"
-import ApolloClient, { gql } from "apollo-boost"
-import Button from "@material-ui/core/Button"
-import { makeStyles } from "@material-ui/core/styles"
+import React, { useState, useEffect } from "react";
+import "./Projects.css";
+import Project from "../project/Project";
+import Section from "../section/Section";
+import { Fade } from "react-reveal";
+import ApolloClient, { gql } from "apollo-boost";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   moreProjects: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: "500",
     },
   },
-}))
+}));
 
 const client = new ApolloClient({
   uri: "https://api.github.com/graphql",
@@ -34,9 +34,9 @@ const client = new ApolloClient({
       headers: {
         authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
       },
-    })
+    });
   },
-})
+});
 const query = gql`
   {
     user(login: "juliancesaro") {
@@ -69,30 +69,30 @@ const query = gql`
       }
     }
   }
-`
+`;
 
 const Projects = () => {
-  const [githubProjects, setGithubProjects] = useState([])
-  const [loadProjectsError, setLoadProjectsError] = useState(null)
+  const [githubProjects, setGithubProjects] = useState([]);
+  const [loadProjectsError, setLoadProjectsError] = useState(null);
 
-  const classes = useStyles()
+  const classes = useStyles();
 
   useEffect(() => {
-    getProjects()
-  }, [])
+    getProjects();
+  }, []);
 
   const getProjects = async () => {
     try {
       const queryResult = await client.query({
         query,
-      })
-      setGithubProjects(queryResult.data.user.pinnedItems.edges)
-      setLoadProjectsError(false)
+      });
+      setGithubProjects(queryResult.data.user.pinnedItems.edges);
+      setLoadProjectsError(false);
     } catch (error) {
-      console.log(error)
-      setLoadProjectsError(true)
+      console.log(error);
+      setLoadProjectsError(true);
     }
-  }
+  };
 
   if (loadProjectsError === false) {
     return (
@@ -100,13 +100,15 @@ const Projects = () => {
         <Section title="Projects">
           <div className="projects-content">
             <ul className="projects-list">
-              {githubProjects.map((project) => (
-                <li key={project.node.name}>
-                  <Fade bottom duration={1000} distance="20px">
-                    <Project project={project.node} />
-                  </Fade>
-                </li>
-              ))}
+              {githubProjects.map((project) => {
+                return (
+                  <li key={project.node.name}>
+                    <Fade bottom duration={1000} distance="20px">
+                      <Project project={project.node} type={"github"} />
+                    </Fade>
+                  </li>
+                );
+              })}
             </ul>
             <Fade bottom duration={1000} distance="20px">
               <div className="more-projects-wrapper">
@@ -129,10 +131,10 @@ const Projects = () => {
           </div>
         </Section>
       </section>
-    )
+    );
   } else {
-    return null
+    return null;
   }
-}
+};
 
-export default Projects
+export default Projects;

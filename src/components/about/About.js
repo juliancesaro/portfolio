@@ -1,57 +1,69 @@
-import React from 'react'
-import './About.css'
-import IsVisible from 'react-is-visible'
-import Section from '../section/Section'
-import { Fade } from 'react-reveal'
-import Typewriter from 'typewriter-effect'
-import emoji from 'react-easy-emoji'
+import React from "react";
+import "./About.css";
+import IsVisible from "react-is-visible";
+import Section from "../section/Section";
+import { Fade } from "react-reveal";
+import Typewriter from "typewriter-effect";
+import emoji from "react-easy-emoji";
 
 const softwareSkills = [
   {
-    skillName: 'Java',
-    amount: '90%',
+    skillName: "JavaScript",
+    amount: "95%",
   },
   {
-    skillName: 'JavaScript',
-    amount: '85%',
+    skillName: "Java",
+    amount: "90%",
   },
   {
-    skillName: 'TypeScript',
-    amount: '75%',
+    skillName: "HTML",
+    amount: "85%",
   },
   {
-    skillName: 'HTML',
-    amount: '80%',
+    skillName: "CSS",
+    amount: "85%",
   },
   {
-    skillName: 'CSS',
-    amount: '80%',
+    skillName: "React.js",
+    amount: "80%",
   },
   {
-    skillName: 'React.js',
-    amount: '75%',
+    skillName: "Vue.js",
+    amount: "80%",
   },
   {
-    skillName: 'Vue.js',
-    amount: '70%',
+    skillName: "Nuxt.js",
+    amount: "75%",
   },
   {
-    skillName: 'SQL',
-    amount: '70%',
+    skillName: "TypeScript",
+    amount: "75%",
   },
   {
-    skillName: 'Node.js',
-    amount: '65%',
+    skillName: "SwiftUI",
+    amount: "75%",
   },
   {
-    skillName: 'Python',
-    amount: '70%',
+    skillName: "AWS",
+    amount: "70%",
   },
   {
-    skillName: 'MongoDB',
-    amount: '55%',
+    skillName: "SQL",
+    amount: "70%",
   },
-]
+  {
+    skillName: "Node.js",
+    amount: "65%",
+  },
+  {
+    skillName: "Python",
+    amount: "70%",
+  },
+  {
+    skillName: "MongoDB",
+    amount: "55%",
+  },
+];
 
 const About = () => {
   return (
@@ -63,24 +75,24 @@ const About = () => {
               <h2>Who am I?</h2>
               <p>I'm Julian.</p>
               <p>
-                {emoji('⚡')} I'm a software engineering student at Macquarie
+                {emoji("⚡")} I'm a software engineering student at Macquarie
                 University.
               </p>
               <p>
-                {emoji('⚡')} I enjoy creating projects and learning new
+                {emoji("⚡")} I enjoy creating projects and learning new
                 technologies.
               </p>
               <div className="typewriter">
-                <p className="typewriter-start">{emoji('⚡')} I'm</p>
+                <p className="typewriter-start">{emoji("⚡")} I'm</p>
                 <Typewriter
                   options={{
                     strings: [
-                      'a fast learner',
-                      'creative',
-                      'inquisitive',
-                      'a problem solver',
-                      'a leader',
-                      'a communicator',
+                      "a fast learner",
+                      "creative",
+                      "inquisitive",
+                      "a problem solver",
+                      "a leader",
+                      "a communicator",
                     ],
                     autoStart: true,
                     loop: true,
@@ -127,7 +139,7 @@ const About = () => {
                             style={
                               isVisible
                                 ? {
-                                    transition: '1.1s 0.2s width ease-in-out',
+                                    transition: "1.1s 0.2s width ease-in-out",
                                     width: `${skills.amount}`,
                                   }
                                 : {
@@ -139,7 +151,7 @@ const About = () => {
                       </IsVisible>
                       <div className="skill-name">{skills.skillName}</div>
                     </li>
-                  )
+                  );
                 })}
               </ul>
             </div>
@@ -147,7 +159,7 @@ const About = () => {
         </div>
       </Section>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
