@@ -29,3 +29,29 @@
   display: flex;
   justify-content: center;
 }
+.bartini-card-wrapper {
+  margin: 20px 0px 20px 0px;
+  min-height: 180px;
+}
+.bartini-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  min-height: 180px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(250, 159, 3),
+    rgb(242, 51, 125)
+  );
+  transition: 0.2s;
+}
+.bartini-card:hover {
+  transform: translateX(-10px);
+}
+.bartini-image {
+  width: 90%;
+  max-width: 300px;
+}
