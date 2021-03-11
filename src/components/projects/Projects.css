@@ -78,4 +78,10 @@
   .projects-list {
     width: 100%;
   }
+  .bartini-card:hover {
+    transform: translateX(0);
+  }
+  .red-bg:hover {
+    opacity: 1;
+  }
 }

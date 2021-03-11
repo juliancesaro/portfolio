@@ -130,7 +130,7 @@
   border-radius: 5px 5px 0 0;
   width: 100%;
   height: 100%;
-  background: #1d2402;
+  background: #1a1818;
 }
 .cabbagetree-image {
   width: 80%;
@@ -146,5 +146,11 @@
 @media screen and (max-width: 991px) {
   .experience-list > li {
     margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 599px) {
+  .experience-list > li:hover {
+    transform: translateY(0);
+    background-color: #3b4353;
   }
 }

@@ -11,6 +11,7 @@
 }
 .navbar a {
   cursor: pointer;
+  font-weight: 600;
 }
 .navlinks {
   display: flex;

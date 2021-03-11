@@ -1,19 +1,19 @@
-import React, { useState } from "react"
-import "./Navbar.css"
-import { Link } from "react-scroll"
-import MobileNav from "../mobileNav/MobileNav"
+import React, { useState } from "react";
+import "./Navbar.css";
+import { Link } from "react-scroll";
+import MobileNav from "../mobileNav/MobileNav";
 
 const Navbar = () => {
-  const [mobilenavVisible, setMobilenavVisible] = useState(false)
-  const [hamburgerClass, setHamburgerClass] = useState("")
+  const [mobilenavVisible, setMobilenavVisible] = useState(false);
+  const [hamburgerClass, setHamburgerClass] = useState("");
   const toggleMobilenavVisible = () => {
-    setMobilenavVisible(!mobilenavVisible)
+    setMobilenavVisible(!mobilenavVisible);
     if (hamburgerClass === "") {
-      setHamburgerClass("open")
+      setHamburgerClass("open");
     } else {
-      setHamburgerClass("")
+      setHamburgerClass("");
     }
-  }
+  };
   return (
     <div className="navbar">
       <div className="navlinks">
@@ -35,6 +35,15 @@ const Navbar = () => {
           duration={500}
         >
           ABOUT
+        </Link>
+        <Link
+          activeClass="active"
+          to="experience"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          EXPERIENCE
         </Link>
         <Link
           activeClass="active"
@@ -72,7 +81,7 @@ const Navbar = () => {
         mobilenavVisible={mobilenavVisible}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

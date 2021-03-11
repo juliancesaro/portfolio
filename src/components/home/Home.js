@@ -1,12 +1,12 @@
-import React from "react"
-import Fade from "react-reveal/Fade"
-import { Link } from "react-scroll"
-import "./Home.css"
-import Navbar from "../navbar/Navbar"
-import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle"
-import Particles from "react-particles-js"
-import emoji from "react-easy-emoji"
-import julian from "../../images/julian.png"
+import React from "react";
+import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
+import "./Home.css";
+import Navbar from "../navbar/Navbar";
+import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
+import Particles from "react-particles-js";
+import emoji from "react-easy-emoji";
+import julian from "../../images/julian.png";
 
 const Home = () => {
   return (
@@ -78,9 +78,7 @@ const Home = () => {
               Hi, I'm <span className="name">Julian Cesaro</span>.{" "}
               <span className="wave-emoji">{emoji("👋")}</span>
             </h1>
-            <h1 className="greeting-text">
-              I'm an aspiring full-stack web developer.
-            </h1>
+            <h1 className="greeting-text">I'm a software engineer.</h1>
             <div className="scroll-down">
               <Link
                 activeClass="active"
@@ -101,7 +99,7 @@ const Home = () => {
         <Navbar />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
