@@ -13,6 +13,15 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/julian.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Julian Cesaro</title>
+    <script>
+      var host = "www.juliancesaro.com";
+      if (
+        host == window.location.host &&
+        window.location.protocol != "https:"
+      ) {
+        window.location.protocol = "https";
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
