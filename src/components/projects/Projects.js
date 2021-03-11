@@ -111,6 +111,8 @@ const Projects = () => {
                   >
                     <div className="bartini-card-wrapper">
                       <div className="bartini-card">
+                        <div className="blue-bg"></div>
+                        <div className="red-bg"></div>
                         <img
                           className="bartini-image"
                           src={bartiniLogo}

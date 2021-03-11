@@ -31,7 +31,7 @@
 }
 .bartini-card-wrapper {
   margin: 20px 0px 20px 0px;
-  min-height: 180px;
+  min-height: 158px;
 }
 .bartini-card {
   position: relative;
@@ -40,13 +40,30 @@
   align-items: center;
   padding: 10px 20px 10px 20px;
   border-radius: 5px;
-  min-height: 180px;
+  min-height: 158px;
+  transition: 0.2s;
+}
+.red-bg {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     to bottom right,
     rgb(250, 159, 3),
     rgb(242, 51, 125)
   );
-  transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.red-bg:hover {
+  opacity: 0;
+}
+.blue-bg {
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #8c15e5, #175a9b);
 }
 .bartini-card:hover {
   transform: translateX(-10px);
@@ -54,4 +71,11 @@
 .bartini-image {
   width: 90%;
   max-width: 300px;
+  z-index: 1;
+  pointer-events: none;
+}
+@media screen and (max-width: 599px) {
+  .projects-list {
+    width: 100%;
+  }
 }
