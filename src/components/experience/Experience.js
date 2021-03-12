@@ -109,7 +109,7 @@ const Experience = () => {
                       <h2>Cabbage Tree Landscape</h2>
                       <div className="image-wrapper">
                         <div
-                          className="black-bg"
+                          className="black-bg-image"
                           style={{ borderRadius: "50%" }}
                         ></div>
                         <img
