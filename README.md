@@ -2,7 +2,7 @@
 
 A responsive developer portfolio.
 
-![Portfolio-gif](https://user-images.githubusercontent.com/42017431/89861217-93fdc980-dbe8-11ea-9fa8-0753b6424e92.gif)
+![Portfolio-gif]
 
 Live demo can be found here: www.juliancesaro.live
 
