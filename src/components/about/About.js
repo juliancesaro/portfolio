@@ -32,10 +32,6 @@ const softwareSkills = [
     amount: "80%",
   },
   {
-    skillName: "Nuxt.js",
-    amount: "75%",
-  },
-  {
     skillName: "TypeScript",
     amount: "75%",
   },
@@ -56,12 +52,8 @@ const softwareSkills = [
     amount: "65%",
   },
   {
-    skillName: "Python",
-    amount: "70%",
-  },
-  {
     skillName: "MongoDB",
-    amount: "55%",
+    amount: "60%",
   },
 ];
 
