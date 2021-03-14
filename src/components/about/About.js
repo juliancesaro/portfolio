@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
 import IsVisible from "react-is-visible";
 import Section from "../section/Section";
@@ -9,55 +9,83 @@ import emoji from "react-easy-emoji";
 const softwareSkills = [
   {
     skillName: "JavaScript",
-    amount: "95%",
+    amount: "95",
   },
   {
     skillName: "Java",
-    amount: "90%",
+    amount: "90",
   },
   {
     skillName: "HTML",
-    amount: "85%",
+    amount: "85",
   },
   {
     skillName: "CSS",
-    amount: "85%",
+    amount: "85",
   },
   {
     skillName: "React.js",
-    amount: "80%",
+    amount: "80",
   },
   {
     skillName: "Vue.js",
-    amount: "80%",
+    amount: "80",
   },
   {
     skillName: "TypeScript",
-    amount: "75%",
+    amount: "75",
   },
   {
     skillName: "SwiftUI",
-    amount: "75%",
+    amount: "75",
   },
   {
     skillName: "AWS",
-    amount: "70%",
+    amount: "70",
   },
   {
     skillName: "SQL",
-    amount: "70%",
+    amount: "70",
   },
   {
     skillName: "Node.js",
-    amount: "65%",
+    amount: "65",
   },
   {
     skillName: "MongoDB",
-    amount: "60%",
+    amount: "60",
   },
 ];
 
+const useContainerDimensions = (myRef) => {
+  const [dimensions, setDimensions] = useState({ width: 0 });
+
+  useEffect(() => {
+    const getDimensions = () => ({
+      width: myRef.current.offsetWidth,
+    });
+    const handleResize = () => {
+      setDimensions(getDimensions());
+    };
+
+    if (myRef.current) {
+      setDimensions(getDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [myRef]);
+
+  return dimensions;
+};
+
 const About = () => {
+  const skillsWrapper = useRef();
+  const { width } = useContainerDimensions(skillsWrapper);
+
   return (
     <section className="about">
       <Section title="About">
@@ -120,7 +148,7 @@ const About = () => {
           <Fade right duration={1000} distance="70px">
             <div className="skills-wrapper">
               <h2>Skills</h2>
-              <ul className="skills">
+              <ul className="skills" ref={skillsWrapper}>
                 {softwareSkills.map((skills) => {
                   return (
                     <li className="skill-bar-wrapper" key={skills.skillName}>
@@ -131,8 +159,13 @@ const About = () => {
                             style={
                               isVisible
                                 ? {
-                                    transition: "1.1s 0.2s width ease-in-out",
-                                    width: `${skills.amount}`,
+                                    transition:
+                                      "1.1s 0.2s transform ease-in-out",
+                                    transform: `scaleX(${
+                                      width * (skills.amount / 100)
+                                    })`,
+                                    transformOrigin: "left",
+                                    width: 1,
                                   }
                                 : {
                                     width: 0,
