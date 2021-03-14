@@ -82,8 +82,6 @@ const About = () => {
   const skillsWrapper = useRef();
   const { width } = useContainerDimensions(skillsWrapper);
 
-  console.log(width);
-
   return (
     <section className="about">
       <Section title="About">
