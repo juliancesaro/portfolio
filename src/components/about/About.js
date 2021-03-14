@@ -5,6 +5,7 @@ import Section from "../section/Section";
 import { Fade } from "react-reveal";
 import Typewriter from "typewriter-effect";
 import emoji from "react-easy-emoji";
+import { isAndroid, isMobile } from "react-device-detect";
 
 const softwareSkills = [
   {
@@ -173,7 +174,9 @@ const About = () => {
                                       1 + skills.id / 10
                                     }s transform ease-in-out`,
                                     transform: `scaleX(${
-                                      width * (skills.amount / 100)
+                                      isAndroid && isMobile
+                                        ? width * (skills.amount / 100) * 0.9
+                                        : width * (skills.amount / 100)
                                     })`,
                                     transformOrigin: "left",
                                     width: 1,
