@@ -8,53 +8,49 @@ import emoji from "react-easy-emoji";
 
 const softwareSkills = [
   {
+    id: 0,
     skillName: "JavaScript",
     amount: "95",
   },
   {
+    id: 1,
     skillName: "Java",
     amount: "90",
   },
   {
+    id: 2,
     skillName: "HTML",
     amount: "85",
   },
   {
+    id: 3,
     skillName: "CSS",
     amount: "85",
   },
   {
+    id: 4,
     skillName: "React.js",
     amount: "80",
   },
   {
+    id: 5,
     skillName: "Vue.js",
     amount: "80",
   },
   {
+    id: 6,
     skillName: "TypeScript",
     amount: "75",
   },
   {
+    id: 7,
     skillName: "SwiftUI",
     amount: "75",
   },
-  {
-    skillName: "AWS",
-    amount: "70",
-  },
-  {
-    skillName: "SQL",
-    amount: "70",
-  },
-  {
-    skillName: "Node.js",
-    amount: "65",
-  },
-  {
-    skillName: "MongoDB",
-    amount: "60",
-  },
+  { id: 8, skillName: "AWS", amount: "70" },
+  { id: 8, skillName: "SQL", amount: "70" },
+  { id: 10, skillName: "Node.js", amount: "65" },
+  { id: 11, skillName: "MongoDB", amount: "60" },
 ];
 
 const useContainerDimensions = (myRef) => {
@@ -86,11 +82,13 @@ const About = () => {
   const skillsWrapper = useRef();
   const { width } = useContainerDimensions(skillsWrapper);
 
+  console.log(width);
+
   return (
     <section className="about">
       <Section title="About">
         <div className="about-content">
-          <Fade left duration={1000} distance="70px">
+          <Fade duration={1000}>
             <div className="about-text">
               <h2>Who am I?</h2>
               <p>I'm Julian.</p>
@@ -145,42 +143,59 @@ const About = () => {
               </div>
             </div>
           </Fade>
-          <Fade right duration={1000} distance="70px">
-            <div className="skills-wrapper">
-              <h2>Skills</h2>
-              <ul className="skills" ref={skillsWrapper}>
-                {softwareSkills.map((skills) => {
-                  return (
-                    <li className="skill-bar-wrapper" key={skills.skillName}>
-                      <IsVisible once>
-                        {(isVisible) => (
+          <div style={{ position: "relative", width: "100%" }}>
+            <IsVisible once>
+              {(isVisibleSkillsWrapper) => (
+                <div
+                  className="skills-wrapper"
+                  style={
+                    isVisibleSkillsWrapper
+                      ? {
+                          transition: "1s opacity ease-in-out",
+                          transform: `translateX(0)`,
+                          opacity: 1,
+                        }
+                      : {}
+                  }
+                >
+                  <h2>Skills</h2>
+                  <ul className="skills" ref={skillsWrapper}>
+                    {softwareSkills.map((skills) => {
+                      return (
+                        <li
+                          className="skill-bar-wrapper"
+                          key={skills.skillName}
+                        >
                           <div
                             className="skill-bar"
                             style={
-                              isVisible
+                              isVisibleSkillsWrapper
                                 ? {
-                                    transition:
-                                      "1.1s 0.2s transform ease-in-out",
+                                    transition: `${
+                                      1 + skills.id / 10
+                                    }s transform ease-in-out`,
                                     transform: `scaleX(${
                                       width * (skills.amount / 100)
                                     })`,
                                     transformOrigin: "left",
                                     width: 1,
+                                    opacity: 1,
                                   }
                                 : {
-                                    width: 0,
+                                    transform: `scaleX(1)`,
+                                    width: 1,
                                   }
                             }
                           ></div>
-                        )}
-                      </IsVisible>
-                      <div className="skill-name">{skills.skillName}</div>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </Fade>
+                          <div className="skill-name">{skills.skillName}</div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
+            </IsVisible>
+          </div>
         </div>
       </Section>
     </section>

@@ -11,7 +11,9 @@ const Section = (props) => {
       <Fade right duration={1000}>
         <div className="underline"></div>
       </Fade>
-      <Fade duration={1000}>{props.children}</Fade>
+      {/* <Fade duration={1000}> */}
+      {props.children}
+      {/* </Fade> */}
     </>
   );
 };
