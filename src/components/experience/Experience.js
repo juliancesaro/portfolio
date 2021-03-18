@@ -38,18 +38,29 @@ const Experience = () => {
                         </div>
                       </div>
                       <div className="experience-card-bottom">
-                        <h2>Software Engineer</h2>
-                        <h3>October 2020 - Present</h3>
-                        <ul>
-                          <li>
-                            Responsible for managing front-end development and
-                            deployment
-                          </li>
-                          <li>
-                            Assist tech team members with back-end development
-                            and integration of AWS services
-                          </li>
-                        </ul>
+                        <div>
+                          <h2>Software Engineer</h2>
+                          <h3>October 2020 - Present</h3>
+                          <ul>
+                            <li>
+                              Responsible for managing front-end development and
+                              deployment
+                            </li>
+                            <li>
+                              Provide assistance with back-end development and
+                              integration of AWS services
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="experience-card-tech">
+                          <ul>
+                            <li>Vue.js</li>
+                            <li>Nuxt.js</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>AWS</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -81,15 +92,25 @@ const Experience = () => {
                       </div>
                     </div>
                     <div className="experience-card-bottom">
-                      <h2>Digital Producer</h2>
-                      <h3>September 2020 - Present</h3>
-                      <ul>
-                        <li>
-                          Responsible for filming and assisting with direction
-                          of numerous video projects
-                        </li>
-                        <li>Assist with improving web UI/UX</li>
-                      </ul>
+                      <div>
+                        <h2>Digital Producer</h2>
+                        <h3>September 2020 - Present</h3>
+                        <ul>
+                          <li>
+                            Responsible for filming and directing numerous video
+                            projects meeting client requirements and deadlines
+                          </li>
+                          <li>
+                            Improved web UI/UX to better illustrate the
+                            business's offerings
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="experience-card-tech">
+                        <ul>
+                          <li>Wordpress</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -120,14 +141,24 @@ const Experience = () => {
                       </div>
                     </div>
                     <div className="experience-card-bottom">
-                      <h2>Database Developer</h2>
-                      <h3>June 2019 - October 2020</h3>
-                      <ul>
-                        <li>
-                          Created relational databases and interfaces using
-                          Microsoft Access
-                        </li>
-                      </ul>
+                      <div>
+                        <h2>Database Developer</h2>
+                        <h3>June 2019 - October 2020</h3>
+                        <ul>
+                          <li>
+                            Created relational databases and interfaces to
+                            estimate and measure plant stock and project
+                            requirements (<i>Microsoft Access, SQL, VBA</i>)
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="experience-card-tech">
+                        <ul>
+                          <li>Microsoft Access</li>
+                          <li>SQL</li>
+                          <li>VBA</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </a>
