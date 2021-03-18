@@ -148,7 +148,7 @@ const Experience = () => {
                           <li>
                             Created relational databases and interfaces to
                             estimate and measure plant stock and project
-                            requirements (<i>Microsoft Access, SQL, VBA</i>)
+                            requirements
                           </li>
                         </ul>
                       </div>
