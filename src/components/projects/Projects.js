@@ -105,7 +105,7 @@ const Projects = () => {
                 <Fade bottom duration={1000} distance="20px">
                   <a
                     className="project-link"
-                    href="http://ec2-13-236-93-79.ap-southeast-2.compute.amazonaws.com/"
+                    href="https://www.bartiniapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
