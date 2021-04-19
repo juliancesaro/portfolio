@@ -142,7 +142,7 @@ const About = () => {
               </div>
             </div>
           </Fade>
-          <div style={{ position: "relative", width: "100%" }}>
+          <div style={{ position: "relative", width: "100%", maxWidth: 600  }}>
             <IsVisible once>
               {(isVisibleSkillsWrapper) => (
                 <div
