@@ -1,5 +1,5 @@
 .about {
-  background-color: #2d323f;
+  background-color: #2c323f;
 }
 .about-text {
   width: 100%;
@@ -55,7 +55,7 @@
   display: flex;
   flex-direction: column;
   height: 22px;
-  background-color: #0d7c7f;
+  background-color: #1f7787;
   border-radius: 2px 0px 0px 2px;
 }
 @media screen and (min-width: 960px) {
@@ -72,9 +72,9 @@
     left: 0;
     width: 80px;
     height: 22px;
-    font-size: 14px;
-    background-color: #119ea3;
-    font-weight: bold;
+    font-size: 12px;
+    background-color: #2899ad;
+    font-weight: 600;
     color: white;
   }
 }
@@ -94,9 +94,9 @@
     left: 0;
     width: 80px;
     height: 22px;
-    font-size: 14px;
-    background-color: #119ea3;
-    font-weight: bold;
+    font-size: 12px;
+    background-color: #2899ad;
+    font-weight: 600;
     color: white;
   }
 }
@@ -116,9 +116,9 @@
     left: 0;
     width: 65px;
     height: 22px;
-    font-size: 11px;
-    background-color: #119ea3;
-    font-weight: bold;
+    font-size: 10px;
+    background-color: #2899ad;
+    font-weight: 600;
     color: white;
   }
 }

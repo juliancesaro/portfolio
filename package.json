@@ -1,29 +1,29 @@
 {
-  "name": "portfolio-new",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "apollo-boost": "^0.4.9",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.5.1",
     "express": "^4.17.1",
-    "graphql": "^15.3.0",
+    "graphql": "^15.5.0",
     "http": "0.0.1-security",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-device-detect": "^1.17.0",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-easy-emoji": "^1.4.0",
-    "react-is-visible": "^1.1.0",
-    "react-particles-js": "^3.3.0",
+    "react-is-visible": "^1.1.2",
+    "react-particles-js": "^3.4.1",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-scroll": "^1.7.16",
-    "typewriter-effect": "^2.13.1"
+    "react-scroll": "^1.8.2",
+    "typewriter-effect": "^2.17.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,6 +47,6 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.7"
   }
 }

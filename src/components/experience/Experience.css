@@ -1,6 +1,6 @@
 .experience {
   position: relative;
-  background-color: #2d323f;
+  background-color: #2c323f;
 }
 .experience-content {
   margin: 0 auto;
@@ -101,6 +101,9 @@
 .experience-card-bottom ul {
   list-style-type: disc;
   text-align: left;
+}
+.experience-card-bottom li {
+  font-size: 16px;
 }
 .experience-card-tech > ul {
   list-style-type: none;

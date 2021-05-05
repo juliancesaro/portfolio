@@ -5,13 +5,16 @@
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #1b242f;
-  border-bottom: 3px solid #12adb3;
+  background-color: #1a212e;
+  border-bottom: 3px solid #30b7cf;
   pointer-events: fill;
 }
 .navbar a {
   cursor: pointer;
   font-weight: 600;
+}
+.navlink-wrapper {
+  width: 20%;
 }
 .navlinks {
   display: flex;
