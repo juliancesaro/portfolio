@@ -49,7 +49,7 @@
 }
 .greeting {
   pointer-events: none;
-  margin: 0 20px;
+  margin: -63px 20px 0 20px;
 }
 .greeting-text {
   margin: 5px;
