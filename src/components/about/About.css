@@ -107,6 +107,9 @@
     justify-content: center;
     align-items: center;
   }
+  .skills {
+    width: 100%;
+  }
   .skill-name {
     position: absolute;
     display: flex;

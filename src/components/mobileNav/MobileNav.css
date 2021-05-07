@@ -5,7 +5,7 @@
   clip: rect(0, 9999px, 9999px, -9999px);
 }
 .mobilenav {
-  background-color: #1b242f;
+  background-color: #1a212e;
 }
 .mobilenav.on {
   transition: transform ease-in-out 0.4s, opacity ease-out 0.3s;

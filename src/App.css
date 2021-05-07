@@ -21,7 +21,7 @@ body {
   }
   section {
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
     padding-bottom: 0;
   }
 }
@@ -31,6 +31,7 @@ body {
   background: #212833;
   color: white;
   font-family: "Montserrat", sans-serif;
+  min-width: 300px;
 }
 button > span {
   font-family: "Montserrat", sans-serif;
