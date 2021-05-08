@@ -1,14 +1,13 @@
-# Portfolio
+<div align="center">
+  <h1>👨‍💻🌌<br>Portfolio</h1>
+  <h3>A responsive developer portfolio</h3>
+</div>
 
-A responsive developer portfolio.
-
-![Portfolio-gif](https://user-images.githubusercontent.com/42017431/117540967-f808cd80-b054-11eb-94e9-3d4d10d6ec28.gif)
-
-Live demo can be found here: www.juliancesaro.com
+<div align="center"><img src="https://user-images.githubusercontent.com/42017431/117540967-f808cd80-b054-11eb-94e9-3d4d10d6ec28.gif" /></div>
 
 ---
 
-## Technologies and packages
+## 🛠️ Technologies and packages
 
 - [React](https://reactjs.org/)
 - [graphql](https://graphql.org/) 
