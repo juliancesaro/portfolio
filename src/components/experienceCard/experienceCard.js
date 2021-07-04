@@ -1,53 +1,72 @@
-import React from "react";
+import React from 'react'
+import './ExperienceCard.css'
 
-const ExperienceCard = () => {
+const ExperienceCard = ({ experience }) => {
+  let { link, company, title, dateFrom, dateTo, info, stack } = experience
   return (
     <a
       className="experience-link"
-      href="https://www.8secondz.com/"
+      href={link}
       target="_blank"
       rel="noopener noreferrer"
     >
       <div className="experience-card-wrapper">
         <div className="experience-card">
           <div className="experience-card-top">
-            <div className="orange-bg"></div>
-            <h2>8secondz</h2>
+            <div
+              className="experience-bg"
+              style={{ background: experience.colourPrimary }}
+            ></div>
+            <h2>{company}</h2>
             <div className="image-wrapper">
-              <div className="orange-bg" style={{ borderRadius: "50%" }}></div>
+              <div
+                className="experience-bg logo-bg"
+                style={{
+                  background: experience.colourSecondary
+                    ? experience.colourSecondary
+                    : experience.colourPrimary,
+                }}
+              ></div>
               <img
-                className="eightsecondz-image"
-                src={eightsecondzLogo}
-                alt="eightsecondz-logo"
+                className="company-logo"
+                src={require(`../../images/logos/${company
+                  .replace(/ /g, '')
+                  .toLowerCase()}.png`)}
+                alt={`${company}-logo`}
+                style={
+                  experience.logoheight
+                    ? {
+                        height: `${experience.logoheight}%`,
+                      }
+                    : { width: `${experience.logowidth}%` }
+                }
               />
             </div>
           </div>
           <div className="experience-card-bottom">
             <div>
-              <h2>Software Engineer</h2>
-              <h3>October 2020 - Present</h3>
+              <h2>{title}</h2>
+              <h3>
+                {dateFrom} - {dateTo}
+              </h3>
               <ul>
-                <li>
-                  Responsible for managing front-end development and deployment
-                </li>
-                <li>
-                  Provide assistance with back-end development and integration
-                  of AWS services
-                </li>
+                {info.map((point, idx) => (
+                  <li key={`${company}-point-${idx}`}>{point}</li>
+                ))}
               </ul>
             </div>
             <div className="experience-card-tech">
               <ul>
-                <li>Vue.js</li>
-                <li>Nuxt.js</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>AWS</li>
+                {stack.map((tech) => (
+                  <li key={`${company}-${tech}`}>{tech}</li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
       </div>
     </a>
-  );
-};
+  )
+}
+
+export default ExperienceCard
