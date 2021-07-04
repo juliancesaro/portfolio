@@ -1,5 +1,6 @@
 .experience-link {
   text-decoration: none;
+  height: 100%;
 }
 .experience-card-wrapper {
   border-radius: 5px;
@@ -113,7 +114,7 @@
   pointer-events: none;
 }
 @media screen and (max-width: 599px) {
-  .experience-list > li:hover {
+  .experience-card-wrapper:hover {
     transform: translateY(0);
     background-color: #3b4353;
   }

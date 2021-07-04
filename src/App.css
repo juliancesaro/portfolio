@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 html,
 #root,
 body {
@@ -30,11 +30,12 @@ body {
   padding: 0;
   background: #212833;
   color: white;
-  font-family: "Montserrat", sans-serif;
-  min-width: 300px;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 button > span {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .App {
   display: flex;

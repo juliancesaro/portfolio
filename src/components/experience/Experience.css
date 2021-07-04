@@ -15,9 +15,11 @@
   margin: 0 auto;
 }
 .experience-list > li {
-  width: calc(33.333333% - 20px);
   border-radius: 5px;
   margin: 20px 10px;
   width: 390px;
   min-width: 290px;
+}
+.experience-list > li > div {
+  height: 100%;
 }

@@ -12,7 +12,7 @@ const Experience = () => {
         <div className="experience-content">
           <ul className="experience-list">
             {experienceData.experience.reverse().map((exp) => (
-              <li>
+              <li key={`experience-${exp.company}`}>
                 <Fade bottom duration={1000} distance="20px">
                   <ExperienceCard experience={exp} />
                 </Fade>

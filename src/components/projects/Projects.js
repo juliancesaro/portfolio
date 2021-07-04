@@ -38,6 +38,7 @@ const client = new ApolloClient({
     })
   },
 })
+
 const query = gql`
   {
     user(login: "juliancesaro") {
