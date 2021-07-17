@@ -92,8 +92,7 @@ const About = () => {
               <h2>Who am I?</h2>
               <p>I'm Julian.</p>
               <p>
-                {emoji("⚡")} I'm a software engineering student at Macquarie
-                University.
+                {emoji("⚡")} I studied software engineering at Macquarie University.
               </p>
               <p>
                 {emoji("⚡")} I enjoy creating projects and learning new
