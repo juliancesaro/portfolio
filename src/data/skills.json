@@ -6,28 +6,19 @@
       "amount": "95"
     },
     {
-      "id": 1,
-      "skillName": "Java",
-      "amount": "90"
-    },
-    {
-      "id": 2,
-      "skillName": "HTML",
-      "amount": "85"
-    },
-    {
-      "id": 3,
-      "skillName": "CSS",
-      "amount": "85"
-    },
-    {
       "id": 4,
       "skillName": "React.js",
-      "amount": "80"
+      "amount": "90"
     },
     {
       "id": 5,
       "skillName": "Vue.js",
+      "amount": "90"
+    },
+    { "id": 10, "skillName": "Node.js", "amount": "85" },
+    {
+      "id": 1,
+      "skillName": "Java",
       "amount": "80"
     },
     {
@@ -35,14 +26,12 @@
       "skillName": "TypeScript",
       "amount": "75"
     },
+    { "id": 8, "skillName": "AWS", "amount": "70" },
+    { "id": 8, "skillName": "Python", "amount": "70" },
     {
       "id": 7,
       "skillName": "SwiftUI",
-      "amount": "75"
-    },
-    { "id": 8, "skillName": "AWS", "amount": "70" },
-    { "id": 8, "skillName": "SQL", "amount": "70" },
-    { "id": 10, "skillName": "Node.js", "amount": "65" },
-    { "id": 11, "skillName": "MongoDB", "amount": "60" }
+      "amount": "60"
+    }
   ]
 }

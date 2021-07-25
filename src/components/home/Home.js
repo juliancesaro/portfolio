@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import './Home.css'
 import Fade from 'react-reveal/Fade'
 import { Link } from 'react-scroll'
-import './Home.css'
-import Navbar from '../navbar/Navbar'
-import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle'
 import Particles from 'react-particles-js'
+import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle'
+import Navbar from '../navbar/Navbar'
+import config from '../../config'
 import julian from '../../images/julian.jpeg'
 
 const Home = () => {
@@ -14,62 +15,7 @@ const Home = () => {
       <div className="home">
         <Particles
           className="particles"
-          params={{
-            particles: {
-              number: { value: 20 },
-              color: { value: ['#cc892b', '#1cd6b1', '#8c4ec7', '#8bc74e'] },
-              opacity: {
-                value: 0.5,
-                random: false,
-                anim: {
-                  enable: true,
-                  speed: 0.2,
-                  opacity_min: 0.3,
-                  sync: false,
-                },
-              },
-              size: {
-                value: 5,
-                random: true,
-              },
-              line_linked: {
-                enable: true,
-                distance: 150,
-                color: '#ffffff',
-                opacity: 0.1,
-                width: 1,
-              },
-              move: {
-                enable: true,
-                speed: 1,
-                direction: 'none',
-                random: true,
-                straight: false,
-                bounce: true,
-              },
-            },
-            interactivity: {
-              detect_on: 'canvas',
-              // activate
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: ['bubble'],
-                },
-                resize: true,
-              },
-              modes: {
-                bubble: {
-                  distance: 200,
-                  size: 12,
-                  duration: 1,
-                  opacity: 0.8,
-                  speed: 2,
-                },
-              },
-            },
-            retina_detect: true,
-          }}
+          params={config.particles}
         />
         <div className={`greeting${!imageLoaded ? ' hide' : ''}`}>
           <Fade bottom distance="40px">

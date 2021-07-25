@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
 import IsVisible from 'react-is-visible'
-import { skills } from '../../data/skills.json'
 import { Fade } from 'react-reveal'
+import { isAndroid, isMobile } from 'react-device-detect'
+import { skills } from '../../data/skills.json'
 import { useContainerDimensions } from '../../hooks'
 
 const Skills = () => {
@@ -39,7 +40,9 @@ const Skills = () => {
                                   1 + skills.id / 10
                                 }s transform ease-in-out`,
                                 transform: `scaleX(${
-                                  width * (skills.amount / 100)
+                                  isAndroid && isMobile
+                                    ? width * (skills.amount / 100) * 0.9
+                                    : width * (skills.amount / 100)
                                 })`,
                                 transformOrigin: 'left',
                                 width: 1,

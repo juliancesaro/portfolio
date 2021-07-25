@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import Typewriter from 'typewriter-effect'
+import { Link } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
 import Skills from '../skills/Skills'
@@ -17,13 +18,14 @@ const About = () => {
               <span role="img" aria-label="lightning">
                 ⚡
               </span>{' '}
-              I studied software engineering at Macquarie University.
+              I'm a software engineer currently focused on frontend development.
             </p>
             <p>
               <span role="img" aria-label="lightning">
                 ⚡
               </span>{' '}
-              I enjoy creating projects and learning new technologies.
+              You can find me working with technologies such as JavaScript,
+              Typescript, React, Vue, and Node.
             </p>
             <div className="typewriter">
               <p className="typewriter-start">
@@ -39,7 +41,6 @@ const About = () => {
                     'creative',
                     'inquisitive',
                     'a problem solver',
-                    'a leader',
                     'a communicator',
                   ],
                   autoStart: true,
@@ -49,10 +50,29 @@ const About = () => {
               <p>.</p>
             </div>
             <p>
-              I've always been passionate about technology, which is why I
-              decided to start studying software engineering over four years
-              ago. Since then, I've learned a lot and aim to continue learning
-              by constantly challenging myself!
+              I've always been passionate about solving problems, which is one
+              of the reasons why I decided to start studying software
+              engineering way back in 2017. Since then, I've created some{' '}
+              <Link
+                className="textLink"
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                projects
+              </Link>
+              , worked at some{' '}
+              <Link
+                className="textLink"
+                to="experience"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                great places
+              </Link>, and met
+              some great people.
             </p>
             <div className="location-wrapper">
               <svg

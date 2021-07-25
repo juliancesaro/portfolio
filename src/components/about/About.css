@@ -21,6 +21,10 @@
 .typewriter > p {
   margin: 0;
 }
+.textLink {
+  color: #FFAF00;
+  cursor: pointer;
+}
 .location-wrapper {
   display: flex;
   align-items: center;

@@ -18,58 +18,27 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navlinks">
         <div className="navlink-wrapper">
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
+          <Link to="home" spy={true} smooth={true} duration={500}>
             HOME
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={1}
-            duration={500}
-          >
+          <Link to="about" spy={true} smooth={true} duration={500}>
             ABOUT
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link
-            activeClass="active"
-            to="experience"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
+          <Link to="experience" spy={true} smooth={true} duration={500}>
             EXPERIENCE
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
+          <Link to="projects" spy={true} smooth={true} duration={500}>
             PROJECTS
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
+          <Link to="contact" spy={true} smooth={true} duration={500}>
             CONTACT
           </Link>
         </div>
