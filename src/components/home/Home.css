@@ -1,15 +1,13 @@
 @media screen and (min-width: 599px) {
   .julian {
     width: 120px;
-    border-radius: 50%;
-    border: 0.2rem solid orange;
+    height: 120px;
   }
 }
 @media screen and (max-width: 599px) {
   .julian {
     width: 100px;
-    border-radius: 50%;
-    border: 0.2rem solid orange;
+    height: 100px;
   }
 }
 @media screen and (min-height: 599px) {
@@ -50,6 +48,10 @@
 .greeting {
   pointer-events: none;
   margin: -63px 20px 0 20px;
+}
+.julian {
+  border-radius: 50%;
+  border: 0.2rem solid orange;
 }
 .greeting-text {
   margin: 5px;
