@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
 import "./Home.css";
@@ -9,6 +9,7 @@ import emoji from "react-easy-emoji";
 import julian from "../../images/julian.jpeg";
 
 const Home = () => {
+  const [imageLoaded, setImageLoaded] = useState(false)
   return (
     <div className="home-wrapper">
       <div className="home">
@@ -71,9 +72,9 @@ const Home = () => {
             retina_detect: true,
           }}
         />
-        <div className="greeting">
+        <div className={`greeting${!imageLoaded ? ' hide' : ''}`}>
           <Fade bottom distance="40px">
-            <img className="julian" alt="julian" src={julian} />
+            <img className="julian" alt="julian" src={julian} onLoad={() => setImageLoaded(true)} />
             <h1 className="greeting-text">
               Hi, I'm <span className="name">Julian Cesaro</span>.{" "}
               <span className="wave-emoji">{emoji("👋")}</span>

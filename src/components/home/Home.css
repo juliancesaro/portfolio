@@ -49,6 +49,9 @@
   pointer-events: none;
   margin: -63px 20px 0 20px;
 }
+.hide {
+  display: none;
+}
 .julian {
   border-radius: 50%;
   border: 0.2rem solid orange;
