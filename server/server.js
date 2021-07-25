@@ -1,14 +1,14 @@
-const express = require("express")
-const http = require("http")
+const express = require('express')
+const http = require('http')
 const app = express()
-app.use(express.static("build"))
+app.use(express.static('build'))
 
 const port = process.env.PORT || 3000
 
 const server = http.createServer(app)
 
 const unknownEndpoint = (request, response) => {
-  response.status(404).send({ error: "This page does not exist!" })
+  response.status(404).send({ error: 'This page does not exist!' })
 }
 
 app.use(unknownEndpoint)

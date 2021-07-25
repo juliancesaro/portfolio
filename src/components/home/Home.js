@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
-import { Link } from "react-scroll";
-import "./Home.css";
-import Navbar from "../navbar/Navbar";
-import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
-import Particles from "react-particles-js";
-import emoji from "react-easy-emoji";
-import julian from "../../images/julian.jpeg";
+import React, { useState } from 'react'
+import Fade from 'react-reveal/Fade'
+import { Link } from 'react-scroll'
+import './Home.css'
+import Navbar from '../navbar/Navbar'
+import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle'
+import Particles from 'react-particles-js'
+import julian from '../../images/julian.jpeg'
 
 const Home = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
@@ -18,7 +17,7 @@ const Home = () => {
           params={{
             particles: {
               number: { value: 20 },
-              color: { value: ["#cc892b", "#1cd6b1", "#8c4ec7", "#8bc74e"] },
+              color: { value: ['#cc892b', '#1cd6b1', '#8c4ec7', '#8bc74e'] },
               opacity: {
                 value: 0.5,
                 random: false,
@@ -36,26 +35,26 @@ const Home = () => {
               line_linked: {
                 enable: true,
                 distance: 150,
-                color: "#ffffff",
+                color: '#ffffff',
                 opacity: 0.1,
                 width: 1,
               },
               move: {
                 enable: true,
                 speed: 1,
-                direction: "none",
+                direction: 'none',
                 random: true,
                 straight: false,
                 bounce: true,
               },
             },
             interactivity: {
-              detect_on: "canvas",
+              detect_on: 'canvas',
               // activate
               events: {
                 onhover: {
                   enable: true,
-                  mode: ["bubble"],
+                  mode: ['bubble'],
                 },
                 resize: true,
               },
@@ -74,10 +73,15 @@ const Home = () => {
         />
         <div className={`greeting${!imageLoaded ? ' hide' : ''}`}>
           <Fade bottom distance="40px">
-            <img className="julian" alt="julian" src={julian} onLoad={() => setImageLoaded(true)} />
+            <img
+              className="julian"
+              alt="julian"
+              src={julian}
+              onLoad={() => setImageLoaded(true)}
+            />
             <h1 className="greeting-text">
-              Hi, I'm <span className="name">Julian Cesaro</span>.{" "}
-              <span className="wave-emoji">{emoji("👋")}</span>
+              Hi, I'm <span className="name">Julian Cesaro</span>.{' '}
+              <span className="wave-emoji" role="img" aria-label="waving hand">👋</span>
             </h1>
             <h1 className="greeting-text">I'm a software engineer.</h1>
             <div className="scroll-down">
@@ -91,7 +95,7 @@ const Home = () => {
               >
                 <ArrowDropDownCircleIcon
                   fontSize="large"
-                  style={{ pointerEvents: "fill", cursor: "pointer" }}
+                  style={{ pointerEvents: 'fill', cursor: 'pointer' }}
                 />
               </Link>
             </div>
@@ -100,7 +104,7 @@ const Home = () => {
         <Navbar />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

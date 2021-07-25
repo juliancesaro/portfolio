@@ -98,63 +98,61 @@ const Projects = () => {
 
   if (loadProjectsError === false) {
     return (
-      <section className="projects">
-        <Section title="Projects">
-          <div className="projects-content">
-            <ul className="projects-list">
-              <li>
-                <Fade bottom duration={1000} distance="20px">
-                  <a
-                    className="project-link"
-                    href="https://www.bartiniapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="bartini-card-wrapper">
-                      <div className="bartini-card">
-                        <div className="blue-bg"></div>
-                        <div className="red-bg"></div>
-                        <img
-                          className="bartini-image"
-                          src={bartiniLogo}
-                          alt="bartini-logo"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </Fade>
-              </li>
-              {githubProjects.map((project) => {
-                return (
-                  <li key={project.node.name}>
-                    <Fade bottom duration={1000} distance="20px">
-                      <Project project={project.node} type={'github'} />
-                    </Fade>
-                  </li>
-                )
-              })}
-            </ul>
-            <Fade bottom duration={1000} distance="20px">
-              <div className="more-projects-wrapper">
+      <Section title="Projects">
+        <div className="projects-content">
+          <ul className="projects-list">
+            <li>
+              <Fade bottom duration={1000} distance="20px">
                 <a
                   className="project-link"
-                  href={'https://github.com/juliancesaro'}
+                  href="https://www.bartiniapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button
-                    className={classes.moreProjects}
-                    type="button"
-                    variant="contained"
-                  >
-                    more projects
-                  </Button>
+                  <div className="bartini-card-wrapper">
+                    <div className="bartini-card">
+                      <div className="blue-bg"></div>
+                      <div className="red-bg"></div>
+                      <img
+                        className="bartini-image"
+                        src={bartiniLogo}
+                        alt="bartini-logo"
+                      />
+                    </div>
+                  </div>
                 </a>
-              </div>
-            </Fade>
-          </div>
-        </Section>
-      </section>
+              </Fade>
+            </li>
+            {githubProjects.map((project) => {
+              return (
+                <li key={project.node.name}>
+                  <Fade bottom duration={1000} distance="20px">
+                    <Project project={project.node} type={'github'} />
+                  </Fade>
+                </li>
+              )
+            })}
+          </ul>
+          <Fade bottom duration={1000} distance="20px">
+            <div className="more-projects-wrapper">
+              <a
+                className="project-link"
+                href={'https://github.com/juliancesaro'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  className={classes.moreProjects}
+                  type="button"
+                  variant="contained"
+                >
+                  more projects
+                </Button>
+              </a>
+            </div>
+          </Fade>
+        </div>
+      </Section>
     )
   } else {
     return null

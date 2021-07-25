@@ -15,4 +15,3 @@
 - [particles.js](https://github.com/VincentGarreau/particles.js/)
 - [react-reveal](https://github.com/rnosov/react-reveal)
 - [react-is-visible](https://github.com/lessp/react-is-visible)
-- [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)

@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import "./TopButton.css"
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward"
-import { Link } from "react-scroll"
+import React, { useState } from 'react'
+import './TopButton.css'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
+import { Link } from 'react-scroll'
 
 const TopButton = () => {
   const [topButtonVisible, setTopButtonVisible] = useState(false)
@@ -32,7 +32,7 @@ const TopButton = () => {
       offset={-63}
     >
       <button
-        className={"topButton " + (topButtonVisible ? "on" : "off")}
+        className={'topButton ' + (topButtonVisible ? 'on' : 'off')}
         title="Go to top"
       >
         <i aria-hidden="true">

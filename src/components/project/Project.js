@@ -1,8 +1,8 @@
-import React from "react";
-import "./Project.css";
+import React from 'react'
+import './Project.css'
 
 const Project = ({ project, type }) => {
-  if (type === "github") {
+  if (type === 'github') {
     return (
       <a
         className="project-link"
@@ -52,8 +52,8 @@ const Project = ({ project, type }) => {
           </div>
         </div>
       </a>
-    );
+    )
   }
-};
+}
 
-export default Project;
+export default Project

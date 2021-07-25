@@ -1,11 +1,11 @@
-import React from "react";
-import "./MobileNav.css";
-import { Link } from "react-scroll";
+import React from 'react'
+import './MobileNav.css'
+import { Link } from 'react-scroll'
 
 const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
   return (
     <div className="mobilenav-wrapper">
-      <div className={"mobilenav " + (mobilenavVisible ? "on" : "off")}>
+      <div className={'mobilenav ' + (mobilenavVisible ? 'on' : 'off')}>
         <div className="mobilenavlinks">
           <div className="mobilenavlink">
             <Link
@@ -71,7 +71,7 @@ const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileNav;
+export default MobileNav
