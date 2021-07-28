@@ -1,6 +1,7 @@
 .project-link {
   color: white;
   text-decoration: none;
+  cursor: default;
 }
 .project-card-wrapper {
   margin: 20px 0px 20px 0px;
@@ -10,8 +11,9 @@
   border-radius: 5px;
   background-color: #3b4353;
   transition: 0.2s;
+  cursor: pointer;
 }
-.project-card:hover {
+.project-card-wrapper:hover .project-card {
   background-color: #474f63;
   transform: translateX(-10px);
 }
@@ -30,6 +32,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 1;
 }
 .project-info-left {
   display: flex;
@@ -58,7 +61,7 @@
   font-size: small;
 }
 @media screen and (max-width: 599px) {
-  .project-card:hover {
+  .project-card-wrapper:hover .project-card {
     background-color: #3b4353;
     transform: translateX(0);
   }

@@ -1,23 +1,25 @@
 .experience-link {
   text-decoration: none;
   height: 100%;
+  cursor: default;
 }
 .experience-card-wrapper {
-  border-radius: 5px;
-  background-color: #3b4353;
   height: 100%;
   transition: 0.2s;
 }
-.experience-card-wrapper:hover {
-  transform: translateY(-10px);
-  background-color: #474f63;
-}
 .experience-card {
   position: relative;
+  background-color: #3b4353;
+  border-radius: 5px;
   align-items: center;
   min-height: 158px;
   transition: 0.2s;
   height: 100%;
+  cursor: pointer;
+}
+.experience-card-wrapper:hover .experience-card {
+  transform: translateY(-10px);
+  background-color: #474f63;
 }
 .experience-card-top {
   position: relative;

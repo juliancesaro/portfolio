@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './Projects.css'
-import Project from '../project/Project'
-import Section from '../section/Section'
 import { Fade } from 'react-reveal'
 import ApolloClient, { gql } from 'apollo-boost'
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles'
-import bartiniLogo from '../../images/logos/bartini.png'
+import { featured_projects } from '../../data/featured_projects.json'
+import Project from '../project/Project'
+import Section from '../section/Section'
+import FeaturedProject from '../featuredProject/FeaturedProject'
 
 const useStyles = makeStyles((theme) => ({
   moreProjects: {
@@ -101,28 +102,21 @@ const Projects = () => {
       <Section title="Projects">
         <div className="projects-content">
           <ul className="projects-list">
-            <li>
-              <Fade bottom duration={1000} distance="20px">
-                <a
-                  className="project-link"
-                  href="https://www.bartiniapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="bartini-card-wrapper">
-                    <div className="bartini-card">
-                      <div className="blue-bg"></div>
-                      <div className="red-bg"></div>
-                      <img
-                        className="bartini-image"
-                        src={bartiniLogo}
-                        alt="bartini-logo"
-                      />
-                    </div>
-                  </div>
-                </a>
-              </Fade>
-            </li>
+            {featured_projects.map((featuredProject) => {
+              return (
+                <li key={`featured-project-${featuredProject.id}`}>
+                  <Fade bottom duration={1000} distance="20px">
+                    <FeaturedProject
+                      name={featuredProject.name}
+                      link={featuredProject.link}
+                      description={featuredProject.description}
+                      languages={featuredProject.languages}
+                    />
+                  </Fade>
+                </li>
+              )
+            })}
+
             {githubProjects.map((project) => {
               return (
                 <li key={project.node.name}>
