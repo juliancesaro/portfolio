@@ -14,7 +14,6 @@
     "graphql": "^15.5.0",
     "http": "0.0.1-security",
     "react": "^16.14.0",
-    "react-device-detect": "^1.17.0",
     "react-dom": "^16.14.0",
     "react-is-visible": "^1.1.2",
     "react-particles-js": "^3.4.1",
