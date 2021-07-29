@@ -1,7 +1,7 @@
 import React from 'react'
 import './FeaturedProject.css'
 
-const FeaturedProject = ({ name, link, description, languages }) => {
+const FeaturedProject = ({ name, link, description, colour, languages }) => {
   return (
     <a
       className="featured-project-link"
@@ -11,7 +11,12 @@ const FeaturedProject = ({ name, link, description, languages }) => {
     >
       <div className="featured-project-wrapper">
         <div className="featured-project">
-          <div className="featured-project-bg"></div>
+          <div
+            className="featured-project-bg"
+            style={{
+              background: colour,
+            }}
+          ></div>
           <div className="featured-project-top">
             <img
               className="featured-project-image"

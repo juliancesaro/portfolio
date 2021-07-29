@@ -110,6 +110,7 @@ const Projects = () => {
                       name={featuredProject.name}
                       link={featuredProject.link}
                       description={featuredProject.description}
+                      colour={featuredProject.colour}
                       languages={featuredProject.languages}
                     />
                   </Fade>
