@@ -37,16 +37,10 @@ const Skills = () => {
                             ? {
                                 transition: `${
                                   1 + skills.id / 10
-                                }s transform ease-in-out`,
-                                transform: `scaleX(${
-                                  width * (skills.amount / 100) * 0.9
-                                })`,
-                                transformOrigin: 'left',
-                                width: 1,
-                                opacity: 1,
+                                }s width ease-in-out`,
+                                width: width * (skills.amount / 100),
                               }
                             : {
-                                transform: `scaleX(1)`,
                                 width: 1,
                               }
                         }
