@@ -113,7 +113,7 @@
   pointer-events: none;
 }
 @media screen and (max-width: 599px) {
-  .experience-card-wrapper:hover {
+  .experience-card-wrapper:hover .experience-card {
     transform: translateY(0);
     background-color: #3b4353;
   }
