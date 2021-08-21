@@ -40,39 +40,37 @@ const client = new ApolloClient({
   },
 })
 
+const queryInfo = {
+  owner: 'juliancesaro',
+  repositories: ['kudos', 'portfolio', 'speak'],
+}
+
 const query = gql`
-  {
-    user(login: "juliancesaro") {
-      pinnedItems(first: 5, types: [REPOSITORY]) {
-        totalCount
-        edges {
-          node {
-            ... on Repository {
-              name
-              description
-              url
-              id
-              diskUsage
-              languages(first: 2, orderBy: { field: SIZE, direction: DESC }) {
-                nodes {
-                  name
-                  color
-                }
-              }
-              repositoryTopics(first: 3) {
-                nodes {
-                  topic {
-                    name
-                  }
-                }
-              }
-            }
-          }
-        }
+  fragment repoProperties on Repository {
+    name 
+    description
+    url
+    id
+    diskUsage
+    languages(first: 2, orderBy: { field: SIZE, direction: DESC }) {
+      nodes {
+        name
+        color
       }
     }
   }
-`
+
+  {
+    user(login: "${queryInfo.owner}") {
+      ${queryInfo.repositories
+        .map(
+          (repo, index) => `repo${index + 1}: repository(name: "${repo}") {
+        ...repoProperties
+      }`
+        )
+        .join('\n')}
+    }
+  }`
 
 const Projects = () => {
   const [githubProjects, setGithubProjects] = useState([])
@@ -89,7 +87,7 @@ const Projects = () => {
       const queryResult = await client.query({
         query,
       })
-      setGithubProjects(queryResult.data.user.pinnedItems.edges)
+      setGithubProjects(queryResult.data.user)
       setLoadProjectsError(false)
     } catch (error) {
       console.log(error)
@@ -117,15 +115,18 @@ const Projects = () => {
                 </li>
               )
             })}
-
-            {githubProjects.map((project) => {
-              return (
-                <li key={project.node.name}>
-                  <Fade bottom duration={1000} distance="20px">
-                    <Project project={project.node} type={'github'} />
-                  </Fade>
-                </li>
-              )
+            {Object.keys(githubProjects).map((repo) => {
+              if (githubProjects[repo].name) {
+                return (
+                  <li key={githubProjects[repo].name}>
+                    <Fade bottom duration={1000} distance="20px">
+                      <Project project={githubProjects[repo]} type={'github'} />
+                    </Fade>
+                  </li>
+                )
+              } else {
+                return null
+              }
             })}
           </ul>
           <Fade bottom duration={1000} distance="20px">
