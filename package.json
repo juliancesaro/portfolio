@@ -21,6 +21,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.3",
+    "tsparticles": "^1.34.0",
     "typewriter-effect": "^2.18.0"
   },
   "scripts": {

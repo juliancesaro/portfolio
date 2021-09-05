@@ -24,24 +24,26 @@ const About = () => {
               <span role="img" aria-label="lightning">
                 ⚡
               </span>{' '}
-              You can find me working with technologies such as JavaScript,
-              Typescript, React, Vue, and Node.
+              You can find me working with JavaScript, Typescript, React, Vue,
+              and Node.
             </p>
             <div className="typewriter">
               <p className="typewriter-start">
                 <span role="img" aria-label="lightning">
                   ⚡
                 </span>{' '}
-                I'm
+                I enjoy
               </p>
               <Typewriter
                 options={{
                   strings: [
-                    'a fast learner',
-                    'creative',
-                    'inquisitive',
-                    'a problem solver',
-                    'a communicator',
+                    'learning',
+                    'exercise',
+                    'solving problems',
+                    'fixing bugs',
+                    'meeting new people',
+                    'good food',
+                    'fixing more bugs',
                   ],
                   autoStart: true,
                   loop: true,
@@ -50,9 +52,9 @@ const About = () => {
               <p>.</p>
             </div>
             <p>
-              I've always been passionate about solving problems, which is one
-              of the reasons why I decided to start studying software
-              engineering way back in 2017. Since then, I've created some{' '}
+              I've always been passionate about solving problems, which is why I
+              decided to start studying software engineering back in 2017. Since
+              then, I've created some{' '}
               <Link
                 className="textLink"
                 to="projects"
@@ -71,8 +73,8 @@ const About = () => {
                 duration={500}
               >
                 great places
-              </Link>, and met
-              some great people.
+              </Link>
+              , and met some great people.
             </p>
             <div className="location-wrapper">
               <svg
