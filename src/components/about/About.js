@@ -13,18 +13,23 @@ const About = () => {
         <Fade duration={1000}>
           <div className="about-text">
             <h2>Who am I?</h2>
-            <p>I'm Julian.</p>
             <p>
+              I'm Julian{' '}
               <span role="img" aria-label="lightning">
-                ⚡
+                😄
               </span>{' '}
-              I'm a software engineer currently focused on frontend development.
             </p>
             <p>
               <span role="img" aria-label="lightning">
                 ⚡
               </span>{' '}
-              You can find me working with JavaScript, Typescript, React, Vue,
+              I'm a software engineer focusing on web development.
+            </p>
+            <p>
+              <span role="img" aria-label="lightning">
+                ⚡
+              </span>{' '}
+              You can find me working with JavaScript, TypeScript, React, Vue,
               and Node.
             </p>
             <div className="typewriter">
@@ -52,8 +57,8 @@ const About = () => {
               <p>.</p>
             </div>
             <p>
-              I've always been passionate about solving problems, which is why I
-              decided to start studying software engineering back in 2017. Since
+              I've always loved solving problems, which is why I
+              decided to start programming back in 2017. Since
               then, I've created some{' '}
               <Link
                 className="textLink"
